@@ -23,6 +23,7 @@ const page = (props: Props) => {
       {/* Banner */}
       <div className="banner">
         <img className="banner_bg" src="/assets/images/home_banner.png" alt="Logo" />
+        <div className="blur"></div>
         <img className="banner_content_logo" src="/assets/images/banner_content_logo.png" alt="Logo" /> 
         {/* <img className="background_banner" src="/assets/images/background_banner.png" />           */}
       </div>
@@ -30,14 +31,16 @@ const page = (props: Props) => {
       {/* About Us */}
       <div className="about">
         <img className="bg-square" src="/assets/images/background-square.png" alt="Image" />
-        <img className="about_img_1" src="/assets/images/about_img_1.png" />
-        <img className="about_img_2" src="/assets/images/about_img_2.png" />
-        <img className="about_img_3" src="/assets/images/about_img_3.png" />
-        <img className="about_img_4" src="/assets/images/about_img_4.png" />
-        <img className="about_img_5" src="/assets/images/about_img_5.png" />
-        <div className="content">            
-            <p className="title-content">About gold Farm</p>
-            <p className="text">GoldFarm is a unique virtual farm. with a mission to provide fun and rewarding experiences for players. In this game, players will participate in building and managing their own farm, including taking care of livestock, planting crops, and harvesting products. GoldFarm is not only an entertaining game but also a way for players to experience farmer life, learn about agricultural management and create a clean and green living environment.</p>
+        <div className="content">
+          <div className="about-img">
+            <img className="about_img_1" src="/assets/images/about_img_1.png" />
+            <img className="about_img_2" src="/assets/images/about_img_2.png" />
+            <img className="about_img_3" src="/assets/images/about_img_3.png" />
+            <img className="about_img_4" src="/assets/images/about_img_4.png" />
+            <img className="about_img_5" src="/assets/images/about_img_5.png" />
+          </div>
+          <p className="title-content">About gold Farm</p>
+          <p className="text">GoldFarm is a unique virtual farm. with a mission to provide fun and rewarding experiences for players. In this game, players will participate in building and managing their own farm, including taking care of livestock, planting crops, and harvesting products. GoldFarm is not only an entertaining game but also a way for players to experience farmer life, learn about agricultural management and create a clean and green living environment.</p>
         </div>
       </div>
 

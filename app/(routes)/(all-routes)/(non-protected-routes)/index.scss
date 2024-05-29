@@ -6,59 +6,68 @@
 @import "./white-paper/";
 .homepage {
     .banner {
-        position: absolute;
-        width: 1920px;
-        height: 1126px;
-        left: 0px;
+        position: relative;
+        width: 100%;
+        .blur {
+          background: rgb(255, 255, 255);
+          background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgb(160 185 27) 100%);
+          height: 120px;
+          width: 100%;
+          position: absolute;
+          bottom: 0;
+        }
+        .banner_bg {
+          width: 100%;
+        }
         .banner_content_logo {
             /* Group 11 */
             position: absolute;
+            bottom: -100px;
+            left: 50%;
+            transform: translateX(-50%);
             width: 480.77px;
             height: 254.84px;
-            left: 720px;
-            top: 705px;
+            z-index: 1;
         }
     }
     .about {
+        position: relative;
         .bg-square {
-            position: absolute;
-            width: 1920px;
-            height: 1258px;
-            right: 0px;
-            top: 997px;
-            background: linear-gradient(0deg, rgba(167, 192, 37, 0.75), rgba(167, 192, 37, 0.75));
+            padding-top: 100px;
+            position: relative;
+            width: 100%;
+            background: linear-gradient(180deg, rgb(160 185 27) 50%, rgba(255, 255, 255, 0) 100%);
         }
         .about_img_1 {
             position: absolute;
             width: 575.3px;
             height: 331.55px;
-            top: 1127.97px;
-            left: 272px;
+            top: -350px;
+            left: -272px;
             transform: rotate(-6.08deg);
         }
         .about_img_2 {
             position: absolute;
             width: 575.3px;
             height: 331.55px;
-            top: 1096px;
-            left: 1119.33px;
+            top: -350px;
+            left: 450px;
             transform: rotate(0.06deg);
         }
         .about_img_3 {
             position: absolute;
             width: 575.3px;
             height: 331.55px;
-            left: 1407px;
-            top: 1610.28px;
-            transform: rotate(-9.43deg);
+            right: -583px;
+            bottom: -150px;
         }
         .about_img_4 {
             /* Rectangle 6 */
             position: absolute;
             width: 575.3px;
             height: 331.55px;
-            left: 709.43px;
-            top: 1809px;
+            left: 73px;
+            bottom: -450px;
             transform: rotate(3.71deg);
         }
         .about_img_5 {
@@ -66,9 +75,8 @@
             position: absolute;
             width: 575.3px;
             height: 331.55px;
-            left: -24.2px;
-            top: 1557px;
-            transform: rotate(4.29deg);
+            left: -568px;
+            top: 50px;
         }
         .content {
             display: flex;
@@ -77,10 +85,9 @@
             padding: 0px;
             gap: 18px;
             position: absolute;
-            width: 713px;
-            height: 173px;
-            left: calc(50% - 713px/2 + 25.5px);
-            top: 1500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             .title-content {
                 width: 713px;
                 height: 59px;
@@ -126,11 +133,9 @@
         }
     }
     .characters {
-        position: absolute;
-        width: 1920px;
+        position: relative;
+        width: 100%;
         height: 1381px;
-        left: 0px;
-        top: 2255px;
         background: #94AB1A;
         .content {
             display: flex;
@@ -182,11 +187,10 @@
         }
     }
     .environment {
-        width: 1920px;
+        width: 100%;
         height: 1381px;
         background: #94AB1A;
-        position: absolute;
-        top: 3635.85px;
+        position: relative;
         &_img {
             position: absolute;
             width: 1560px;
@@ -248,11 +252,9 @@
     }
     .gameplay {
         /* Rectangle 15 */
-        position: absolute;
-        width: 1920px;
+        position: relative;
+        width: 100%;
         height: 1388px;
-        left: 0px;
-        top: 4734px;
         background: #94AB1A;
         &_child {
             /* Frame 14 */
