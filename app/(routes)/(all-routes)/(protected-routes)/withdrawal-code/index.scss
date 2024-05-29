@@ -1,0 +1,46 @@
+@import './components/';
+
+.withdrawal-code-page {
+    padding: 12px 16px;
+    @media (min-width: 576px) {
+        padding: 24px 40px;
+    }
+    .withdrawal-code__header {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.8);
+        @media (min-width: 768px) {
+            margin-bottom: 24px;
+        }
+    }
+    .withdrawal-code__body {
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 32px;
+        .pincode-form {
+            .pincode-form__control-indicator {
+                text-align: center;
+                @media (min-width: 768px) {
+                    text-align: initial;
+                }
+            }
+        }
+        .forgot-pin {
+            transition: 0.25s;
+            cursor: pointer;
+            text-decoration: underline;
+            &:hover {
+                
+            }
+        }
+        .change-pin {
+            transition: 0.25s;
+            cursor: pointer;
+            text-decoration: underline;
+            }
+            &:hover {
+                
+        }
+    }
+}

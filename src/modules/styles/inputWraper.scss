@@ -1,0 +1,219 @@
+@import "../../module.variables.scss";
+
+.InputWraper.inputDown {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  margin-top: 37px;
+}
+
+.InputWraper,
+.SelectWrapper {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  &.error {
+    background-image: none;
+  }
+
+  > .label {
+    // color: $dark;
+    // transition: 0.2s ease;
+    // font-size: 1.2em;
+    // margin-bottom: 2px;
+    // font-weight: 400;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    @include TM-label-style;
+  }
+
+  &.required {
+    > .label {
+      span::after {
+        content: " *";
+        color: $danger;
+      }
+    }
+  }
+
+  > .description {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    color: rgba($color: $dark, $alpha: 0.5);
+    margin-bottom: 10px;
+  }
+
+  > .wraper {
+    > .input {
+      // border: 1.5px solid $borderColorNew;
+      background: #141414;
+      border: 1px solid #303030;
+      width: 100%;
+      border-radius: 4px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      transition: 0.25s;
+      height: 48px;
+
+      > input {
+        height: 40px;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Pixel Operator HB';
+        padding: 0px 12px;
+        width: 100%;
+        flex: 1;
+        margin-bottom: 0;
+
+        &:-webkit-autofill {
+          font-size: 1em;
+          -webkit-text-fill-color: #fff;
+        }
+
+        &::placeholder {
+          // color: $grey;
+          // font-weight: 300;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          /* Content field */
+          color: rgba(255, 255, 255, 0.4);
+          font-family: 'Pixel Operator HB';
+        }
+      }
+
+      > textarea {
+        background-color: none;
+        border: none;
+        outline: none;
+        border-radius: $borderRadius;
+        font-size: 1em;
+        font-weight: 400;
+        padding: 10px;
+        width: 100%;
+        flex: 1;
+        min-height: $inputHeight * 2;
+      }
+    }
+
+    > .errorMessage {
+      color: $danger;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 4px;
+    }
+  }
+
+  &.mutilLocale {
+    > .wraper {
+      margin-bottom: 7px;
+
+      .input {
+        display: flex;
+        min-height: 38px;
+
+        .localeLabel {
+          font-size: 0.9em;
+          background: rgba($color: $dark, $alpha: 0.05);
+          border-right: 1px solid $borderColor;
+          color: $grey;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: max-content;
+          padding: 0 7px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    > .generalErrorMessage {
+      color: $danger;
+      font-size: 0.75em;
+      font-weight: 500;
+    }
+  }
+
+  &.error {
+    > .wraper {
+      > .input {
+        border: 1px solid $danger !important;
+      }
+    }
+
+    > .label {
+      color: $danger;
+    }
+  }
+
+  &:focus-within {
+    border-color: $primary;
+
+    > .label {
+      // color: $primary;
+    }
+
+    > .wraper {
+      > .input {
+        border-color: #000;
+      }
+
+      > .generalErrorMessage,
+      > .errorMessage {
+        display: none;
+      }
+    }
+  }
+
+  &.disabled {
+    > .wraper {
+      .input {
+        border-color: rgba($color: #000000, $alpha: 0);
+        user-select: none;
+        position: relative;
+        opacity: 0.5;
+
+        &:after {
+          cursor: default;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba($color: #000000, $alpha: 0.05);
+          border-radius: $borderRadius;
+        }
+
+        .label {
+          background: none;
+        }
+
+        // ============================ Related style ================================
+        .InputSelect__single-value--is-disabled,
+        .InputSelectAsync__single-value--is-disabled {
+          color: $dark;
+        }
+
+        .react-datetime-picker__clear-button,
+        .react-datetime-picker__calendar-button,
+        .InputSelect__indicators,
+        .InputSelectAsync__indicators {
+          display: none;
+        }
+
+        // ============================ End Related style ============================
+      }
+    }
+  }
+}

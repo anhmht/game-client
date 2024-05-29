@@ -1,0 +1,428 @@
+.withdraw-form {
+    .withdraw-form__step-1 {
+        position: relative;
+        .withdraw-form__step-1__title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            .withdraw-form__step-1__title__icon {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                color: #fff;
+                margin-right: 12px;
+                z-index: 1;
+            }
+            .withdraw-form__step-1__title__label {
+                font-size: 16px;
+                font-family: "Pixel Operator HB";
+                text-transform: uppercase;
+            }
+        }
+        .withdraw-form__step-1__content {
+            margin-bottom: 32px;
+            .token-select {
+                .token-select__control {
+                    background: #141414;
+                    border: 1px solid #303030;
+                    height: 48px;
+                    // background: transparent;
+                    // box-shadow: none;
+                    // border: none;
+                    // cursor: pointer;
+                    &.token-select__control--is-focused {
+                        // box-shadow: none;
+                        // border: none;
+                    }
+                    .token-select__value-container {
+                        height: 100%;
+                        padding: 8px 12px;
+                        .token-select__single-value {
+                            height: 100%;
+                            .single-value__container {
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                .single-value__icon {
+                                    margin-right: 8px;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    img {
+                                        height: 22px;
+                                        width: 22px;
+                                        object-position: center center;
+                                    }
+                                }
+                                .single-value__label {
+                                    font-size: 16px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .token-select__indicators {
+                        .token-select__indicator {
+                            padding: 12px;
+                            svg {
+                                width: 14px;
+                                height: 14px;
+                                * {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .token-select__menu {
+                    // padding: 8px 16px;
+                    // width: max-content;
+                    // border: none;
+                    // box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+                    // border-radius: 12px;
+                    .token-select__menu-list {
+                        .token-select__option {
+                            // border-radius: 8px;
+                            // padding: 8px;
+                            transition: 0.25s;
+                            cursor: pointer;
+                            &:hover:not(.token-select__option--is-selected) {
+                                // background: #F2F2F2;
+                            }
+                            &:not(:last-child) {
+                                // margin-bottom: 2px;
+                            }
+                            .custom-option__container {
+                                display: flex;
+                                align-items: center;
+                                .custom-option__icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 6px;
+                                    img {
+                                        height: 24px;
+                                        width: 24px;
+                                    }
+                                }
+                                .custom-option__description {
+                                    margin-right: 6px;
+                                    color: #081131;
+                                    font-weight: 500;
+                                }
+                                .custom-option__label {
+                                    color: #A5A5A5;
+                                }
+                            }
+                            &.option--is-selected {
+                                cursor: default;
+                                background: #F2F2F2;
+                                .custom-option__container {
+                                    .custom-option__label {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .withdraw-form__step-2 {
+        .withdraw-form__step-2__title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            .withdraw-form__step-2__title__icon {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                color: #fff;
+                margin-right: 12px;
+                z-index: 1;
+            }
+            .withdraw-form__step-2__title__label {
+                font-size: 16px;
+                font-family: "Pixel Operator HB";
+                text-transform: uppercase;
+            }
+        }
+        .withdraw-form__step-2__content {
+            .withdraw-zone__network-select {
+                margin-bottom: 24px;
+                .network-select {
+                    .network-select__control {
+                        background: #141414;
+                        border: 1px solid #303030;
+                        height: 48px;
+                        .network-select__value-container {
+                            padding: 2px 12px;
+                            .network-select__single-value {
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                        }
+                        .network-select__indicators {
+                            .network-select__indicator {
+                                padding: 12px;
+                                svg {
+                                    width: 14px;
+                                    height: 14px;
+                                    * {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .withdraw-zone__asset-amount {
+                .prefix-token {
+                    display: flex;
+                    align-items: center;
+                    background: #303030;
+                    padding: 15px 12px;
+                    .prefix-token__icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 4px;
+                    }
+                    .prefix-token__label {
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+                .fill-max {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #FFC815;
+                    font-size: 14px;
+                    padding: 12px;
+                    cursor: pointer;
+                }
+            }
+            .withdraw-zone__asset-info {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 24px;
+                font-size: 14px;
+                .withdraw-zone__asset-info__available {
+                    margin-bottom: 2px;
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    font-family: 'Pixel Operator';
+                    .withdraw-zone__asset-info__available__value {
+                        word-break: break-all;
+                        font-weight: 700;
+                    }
+                }
+                .withdraw-zone__asset-info__fee {
+                    word-break: break-all;
+                    margin-bottom: 2px;
+                    font-size: 16px;
+                    font-family: 'Pixel Operator';
+                }
+            }
+            .withdraw-zone__warning {
+                margin-bottom: 24px;
+                color: #F3C759;
+                font-size: 16px;
+                font-family: 'Pixel Operator';
+            }
+            .withdraw-zone__main-button {
+                margin-bottom: 16px;
+                text-align: center;
+                button {
+                    background: url("/assets/images/cyan-button-background.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+            }
+            .withdraw-zone__toggle-notification {
+                .toggle-send-email {
+                    .InputToggleSwitch {
+                        display: flex;
+                        align-items: center;
+                        .label {
+                            display: flex;
+                            align-items: center;
+                            order: 2;
+                            font-size: 16px;
+                            font-family: 'Pixel Operator';
+                        }
+                        .switch {
+                            order: 1;
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .PopupWraper {
+        background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(18px);
+        .box {
+            background: #1f1f1f;
+            width: 95%;
+            .content {
+                padding: 16px 32px 40px;
+                .verify-method-body {
+                    .control-input {
+                        .verify-method-select {
+                            margin-bottom: 24px;
+                            .verify-method-select__control {
+                                height: 48px;
+                                .verify-method-select__single-value {
+                                    .verify-method__container {
+                                        display: flex;
+                                        align-items: center;
+                                        .verify-method__icon {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-right: 8px;
+                                            .verify-method__icon__img {
+                                                height: 28px;
+                                            }
+                                        }
+                                        .verify-method__label {
+                                        }
+                                    }
+                                }
+                            }
+                            .verify-method-select__menu {
+                                .verify-method__container {
+                                    display: flex;
+                                    align-items: center;
+                                    .verify-method__icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 8px;
+                                        padding: 8px 4px;
+                                        .verify-method__icon__img {
+                                            height: 26px;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                    .verify-method__label {
+                                        color: #000;
+                                    }
+                                }
+                                .verify-method-select__option--is-selected {
+                                    .verify-method__container {
+                                        .verify-method__icon {
+                                            background: #fff;
+                                            border-radius: 50%;
+                                            padding: 4px;
+                                        }
+                                        .verify-method__label {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .control-input__item {
+                            display: flex;
+                            align-items: center;
+                            border-radius: 12px;
+                            margin-bottom: 8px;
+                            border: 1px solid #E7E7E7;
+                            padding: 16px 24px;
+                            cursor: pointer;
+                            transition: 0.25s;
+                            &:last-child {
+                                margin-bottom: 16px;
+                            }
+                            &.active {
+                                border: 1px solid #081131;
+                                background: $primary;
+                                pointer-events: none;
+                                .control-input__item__bubble { 
+                                    border: 1px solid #000;
+                                    background: $primary;
+                                    &::after {
+                                        background: #000;
+                                    }
+                                }
+                                .control-input__item__label {
+                                    color: #000;
+                                }
+                            }
+                            &:hover {
+                                border: 1px solid #081131;
+                                background: $primary;
+                                .control-input__item__bubble { 
+                                    border: 1px solid #000;
+                                    background: $primary;
+                                    &::after {
+                                        background: #000;
+                                    }
+                                }
+                                .control-input__item__label {
+                                    color: #000;
+                                }
+                            }
+                            .control-input__item__bubble {
+                                position: relative;
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid #F2F2F2;
+                                border-radius: 50%;
+                                margin-right: 24px;
+                                &::after {
+                                    content: "";
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #fff;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    border-radius: 50%;
+                                }
+                            }
+                            .control-input__item__icon {
+                                padding: 8px;
+                                background: #F2F2F2;
+                                border-radius: 6px;
+                                margin-right: 16px;
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                            .control-input__item__label {
+                                font-weight: 500;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                .control-indicator {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+@import "./\(protected-routes\)/";
+@import "./\(non-protected-routes\)/";
+.all-routes-layout {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // background-image: linear-gradient(rgba(#d6d6d6, 0.1) 2px, transparent 2px), linear-gradient(to right, rgba(#d6d6d6, 0.1) 2px, transparent 2px);
+    background-size: 48px 48px;
+    // background-color: #9c00ff;
+    .all-routes-layout__children {
+        flex: 1;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+    .modalPendingVerify {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+}

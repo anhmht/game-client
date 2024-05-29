@@ -1,0 +1,2936 @@
+{
+    "exchange": {
+        "en-US": "Exchange",
+        "vi-VN": "Giao dịch",
+        "ja-JP": "両替",
+        "th-TH": "แลกเปลี่ยน",
+        "id-ID": "Bertukar",
+        "ms-MY": "Pertukaran",
+        "zh-CN": "交換"
+    },
+    "over-view": {
+        "en-US": "Over view",
+        "vi-VN": "Tin tức",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Gambaran Keseluruhan",
+        "zh-CN": "概观"
+    },
+    "market-cap": {
+        "en-US": "Market Cap",
+        "vi-VN": "Thị trường",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Cap Pasaran",
+        "zh-CN": "市值"
+    },
+    "last-price": {
+        "en-US": "Last price",
+        "vi-VN": "Giá mới nhất",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Harga Terakhir",
+        "zh-CN": "最后价格"
+    },
+    "24h-change": {
+        "en-US": "24h change",
+        "vi-VN": "24h change",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pertukaran tempoh 24 jam",
+        "zh-CN": "24小时的变化"
+    },
+    "24h-high": {
+        "en-US": "24h high",
+        "vi-VN": "Giá 24h",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Ketinggian 24 jam ",
+        "zh-CN": "24小时 高"
+    },
+    "24h-low": {
+        "en-US": "24h low",
+        "vi-VN": "Giá 24h",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kerendahan dalam 24 jam",
+        "zh-CN": "24小时 低"
+    },
+    "profile": {
+        "en-US": "Profile",
+        "vi-VN": "Thông tin tài khoản",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Profil",
+        "zh-CN": "个人总则"
+    },
+    "wallets": {
+        "en-US": "Wallets",
+        "vi-VN": "Ví tiền",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Dompet",
+        "zh-CN": "钱包"
+    },
+    "setting": {
+        "en-US": "Setting",
+        "vi-VN": "Cài đặt",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tetapan",
+        "zh-CN": "设置"
+    },
+    "security": {
+        "en-US": "Security",
+        "vi-VN": "Bảo mật",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Keselamatan",
+        "zh-CN": "安全"
+    },
+    "logout": {
+        "en-US": "Logout",
+        "vi-VN": "Đăng xuất",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "log keluar",
+        "zh-CN": "登出"
+    },
+    "deposit": {
+        "en-US": "Deposit",
+        "vi-VN": "Nạp tiền",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Deposit",
+        "zh-CN": "存款"
+    },
+    "withdraw": {
+        "en-US": "Withdraw",
+        "vi-VN": "Rút tiền",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pengeluaran",
+        "zh-CN": "提款"
+    },
+    "history": {
+        "en-US": "History",
+        "vi-VN": "Lịch sử",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sejarah",
+        "zh-CN": "历史记录"
+    },
+    "account": {
+        "en-US": "Account",
+        "vi-VN": "Tài khoản",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Akaun",
+        "zh-CN": "账户"
+    },
+    "buy/sell": {
+        "en-US": "Buy/Sell",
+        "vi-VN": "Mua bán",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Beli/Jual",
+        "zh-CN": "买/卖"
+    },
+    "buy": {
+        "en-US": "Buy",
+        "vi-VN": "Mua vào",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Membeli",
+        "zh-CN": "购买"
+    },
+    "sell": {
+        "en-US": "Sell",
+        "vi-VN": "Bán ra",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Menjual",
+        "zh-CN": "售卖"
+    },
+    "limit": {
+        "en-US": "Limit",
+        "vi-VN": "Giới hạn",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Had Harga",
+        "zh-CN": "限价"
+    },
+    "market": {
+        "en-US": "Market",
+        "vi-VN": "Chợ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pasar",
+        "zh-CN": "市场"
+    },
+    "stop": {
+        "en-US": "Stop",
+        "vi-VN": "Dừng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Hentikan Kerugian",
+        "zh-CN": "止损"
+    },
+    "price": {
+        "en-US": "Price",
+        "vi-VN": "Giá",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Harga",
+        "zh-CN": "价格"
+    },
+    "quantity": {
+        "en-US": "Quantity",
+        "vi-VN": "Số lượng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kuantiti",
+        "zh-CN": "数量"
+    },
+    "free-balance": {
+        "en-US": "Available",
+        "vi-VN": "Có thể dùng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Baki Percuma",
+        "zh-CN": "自由余额"
+    },
+    "cost": {
+        "en-US": "Cost",
+        "vi-VN": "Phí",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kos",
+        "zh-CN": "成本"
+    },
+    "place-buy-order": {
+        "en-US": "Place Buy Order",
+        "vi-VN": "Đặt lệnh mua",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Meletakkan Pesanan Belian",
+        "zh-CN": "放置购买委托"
+    },
+    "place-sell-order": {
+        "en-US": "Place Sell Order",
+        "vi-VN": "Đặt lệnh bán",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Meletakkan Pesanan Jualan",
+        "zh-CN": "放置售卖委托"
+    },
+    "time": {
+        "en-US": "Time",
+        "vi-VN": "Thời gian",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Masa",
+        "zh-CN": "时间"
+    },
+    "amount": {
+        "en-US": "Amount",
+        "vi-VN": "Giá trị",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Amaun",
+        "zh-CN": "量"
+    },
+    "order-book": {
+        "en-US": "Order Book",
+        "vi-VN": "Lượt đặt lệnh",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Buku Pesanan",
+        "zh-CN": "委托书册"
+    },
+    "email-address": {
+        "en-US": "Email address",
+        "vi-VN": "Địa chỉ email",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Alamat Emel",
+        "zh-CN": "邮箱地址"
+    },
+    "password": {
+        "en-US": "Password",
+        "vi-VN": "Mật khẩu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kata Laluan",
+        "zh-CN": "密码"
+    },
+    "new-password": {
+        "en-US": "New password",
+        "vi-VN": "Mật khẩu mới",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kata laluan baru",
+        "zh-CN": "新的密码"
+    },
+    "confirm-password": {
+        "en-US": "Confirm password",
+        "vi-VN": "Xác nhận mật khẩu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kenal Pasti Kata Laluan",
+        "zh-CN": "确认密码"
+    },
+    "login-to-your-account": {
+        "en-US": "Login to your account",
+        "vi-VN": "Đăng nhập tài khoản",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Log Masuk ke Akaun Anda",
+        "zh-CN": "登入您的账户"
+    },
+    "register-new-account": {
+        "en-US": "Register new account",
+        "vi-VN": "Đăng ký tài khoản mới",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pendaftaran Akaun Baru",
+        "zh-CN": "注册新的账户"
+    },
+    "first-name": {
+        "en-US": "First name",
+        "vi-VN": "Tên",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Name Pertaman",
+        "zh-CN": "名字"
+    },
+    "last-name": {
+        "en-US": "Last name",
+        "vi-VN": "Họ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Nama Akhir",
+        "zh-CN": "姓氏"
+    },
+    "phone-number": {
+        "en-US": "Phone number",
+        "vi-VN": "Số điện thoại",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "No. Telefon",
+        "zh-CN": "电话号码"
+    },
+    "login": {
+        "en-US": "Login",
+        "vi-VN": "Đăng nhập",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Log Masuk",
+        "zh-CN": "登入"
+    },
+    "register": {
+        "en-US": "Register",
+        "vi-VN": "Đăng ký",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Mendaftar",
+        "zh-CN": "注册"
+    },
+    "remember-me": {
+        "en-US": "Remember me",
+        "vi-VN": "Nhớ mật khẩu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "do-not-have-an-account": {
+        "en-US": "Do not have an account?",
+        "vi-VN": "Bạn chưa có tài khoản?",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tiada Akaun",
+        "zh-CN": "还没有账号"
+    },
+    "did-you-forget-your-password": {
+        "en-US": "Did you forget your password?",
+        "vi-VN": "Bạn đã quên mật khẩu?",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "adakah anda terlupa kata laluan anda",
+        "zh-CN": "你忘记密码了吗"
+    },
+    "recovery-password": {
+        "en-US": "Recovery password",
+        "vi-VN": "Khôi phục mật khẩu?",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pemulihan Kata Laluan",
+        "zh-CN": "找回密码"
+    },
+    "read-terms-conditions": {
+        "en-US": "I have read and agree to the",
+        "vi-VN": "Tôi đã đọc và đồng ý với",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "link-read-terms-conditions": {
+        "en-US": "Terms and Conditions",
+        "vi-VN": "Các điều khoản và điều kiện",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "you-had-account": {
+        "en-US": "You had account?",
+        "vi-VN": "Bạn đã có tài khoản?",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Anda mempunyai akaun",
+        "zh-CN": "您已有账号"
+    },
+    "trade-history": {
+        "en-US": "Trade history",
+        "vi-VN": "Lịch sử thương mại",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sejarah Perdagangan",
+        "zh-CN": "交易历史"
+    },
+    "volume": {
+        "en-US": "Volume",
+        "vi-VN": "Số lượng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Isi Padu",
+        "zh-CN": "数额"
+    },
+    "trade-chart-original": {
+        "en-US": "Original",
+        "vi-VN": "Mặc định",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Carta Perdagangan Asal",
+        "zh-CN": "原始交易图表"
+    },
+    "trade-chart": {
+        "en-US": "Trade chart",
+        "vi-VN": "Biểu đồ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Carta Perdagangan",
+        "zh-CN": "交易图表"
+    },
+    "click-to-copy-wallet-address": {
+        "en-US": "Click to copy wallet address",
+        "vi-VN": "Nhấp vào đây để sao chép địa chỉ ví",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "klik untuk salin alamat dompet anda",
+        "zh-CN": "点击复制您的钱包地址"
+    },
+    "copied-wallet-address": {
+        "en-US": "Copied wallet address",
+        "vi-VN": "Sao chép địa chỉ ví thành công",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Alamat dompet sudah disalin",
+        "zh-CN": "钱包地址已复制"
+    },
+    "cannot-find-internal-wallet": {
+        "en-US": "Cannot find internal wallet",
+        "vi-VN": "Không thể tìm thấy ví hệ thống",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tidak dapat mencari dompet dalaman",
+        "zh-CN": "寻找不到内在钱包"
+    },
+    "unable-to-deposit-for-this-wallet": {
+        "en-US": "Unable to deposit for this wallet",
+        "vi-VN": "Không thể nạp tiền cho ví này",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tidak dapat deposit untuk dompet ini",
+        "zh-CN": "无法为此钱包进行存款"
+    },
+    "update": {
+        "en-US": "Update",
+        "vi-VN": "Cập nhật",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kemas kini",
+        "zh-CN": "更新"
+    },
+    "wallet-address": {
+        "en-US": "Wallet address",
+        "vi-VN": "Địa chỉ ví",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Alamat Dompet",
+        "zh-CN": "钱包地址"
+    },
+    "min": {
+        "en-US": "Min",
+        "vi-VN": "Thấp nhất",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Min",
+        "zh-CN": "最低"
+    },
+    "withdraw-fee": {
+        "en-US": "Withdraw fee",
+        "vi-VN": "Phí rút",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Bayaran Pegeluaran",
+        "zh-CN": "提款费"
+    },
+    "wallet-balance": {
+        "en-US": "Available",
+        "vi-VN": "Tổng ví",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Baki Dompet",
+        "zh-CN": "钱包余额"
+    },
+    "description": {
+        "en-US": "Description",
+        "vi-VN": "Mô tả",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Penghuraian",
+        "zh-CN": "描述"
+    },
+    "unknown-error-from-the-system": {
+        "en-US": "Unknow error from the system",
+        "vi-VN": "Lỗi không xác định từ hệ thống",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Ralat sistem yang tidah diketahui",
+        "zh-CN": "系统中的未知错误"
+    },
+    "network-error": {
+        "en-US": "Unable to connect the system, please check your connection.",
+        "vi-VN": "Không truy cập được hệ thống, vui lòng kiểm tra kết nối của bạn.",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tidak dapat menyambungkan sistem, sila periksa sambungan anda",
+        "zh-CN": "无法连接系统，请检查您的网络"
+    },
+    "error": {
+        "en-US": "Error",
+        "vi-VN": "Lỗi",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Ralat",
+        "zh-CN": "错误"
+    },
+    "no-data": {
+        "en-US": "No data",
+        "vi-VN": "Không tìm thấy dữ liệu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tiada Data",
+        "zh-CN": "不存在数据"
+    },
+    "total": {
+        "en-US": "Total",
+        "vi-VN": "Tổng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Jumlah",
+        "zh-CN": "总数"
+    },
+    "must-be-provided": {
+        "en-US": "Must be provided",
+        "vi-VN": "Cần được bổ sung",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "mesti disediakan",
+        "zh-CN": "必须提供"
+    },
+    "password-confirmation-does-not-match": {
+        "en-US": "Password confirmation does not match",
+        "vi-VN": "Xác nhận mật khẩu không khớp",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kata laluan pengesahan tidak-sepadan",
+        "zh-CN": "密码确认不匹配"
+    },
+    "update-password": {
+        "en-US": "Update password",
+        "vi-VN": "Cập nhật mật khẩu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kemas kini kata laluan",
+        "zh-CN": "更新密码"
+    },
+    "copied-affiliation-link": {
+        "en-US": "Copied affiliation link",
+        "vi-VN": "Sao chép link giới thiệu thành công",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "pautan afiliasi sudah disalin",
+        "zh-CN": "已复制会员链接"
+    },
+    "affiliation-link": {
+        "en-US": "Affiliation link",
+        "vi-VN": "Link giới thiệu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pautan Afiliasi",
+        "zh-CN": "会员链接"
+    },
+    "affiliation-code": {
+        "en-US": "Affiliation code",
+        "vi-VN": "Mã giới thiệu",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "amount-in-wallet-not-enough": {
+        "en-US": "The amount in the wallet is not enough",
+        "vi-VN": "Số tiền trong ví không đủ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Amaun dalam dompet tidak mencukupi",
+        "zh-CN": "钱包内的余额不足"
+    },
+    "error-min-withdraw": {
+        "en-US": "At least {amount} needs to be withdrawn",
+        "vi-VN": "Số tiền rút tối thiểu phải đạt {amount}",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sekurang-kurangnya {amaun} perly dikeluarkan",
+        "zh-CN": "提款的最低额度是{数额}"
+    },
+    "change-language": {
+        "en-US": "Change language",
+        "vi-VN": "Đổi ngôn ngữ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tukar Bahasa",
+        "zh-CN": "改变语言"
+    },
+    "type": {
+        "en-US": "Type",
+        "vi-VN": "Loại",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Jenis",
+        "zh-CN": "类型"
+    },
+    "side-buy-sell": {
+        "en-US": "Side",
+        "vi-VN": "Mua/Bán",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "sisi",
+        "zh-CN": "方"
+    },
+    "pair-symbol": {
+        "en-US": "Pair",
+        "vi-VN": "Cặp tiền",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "berpasangan",
+        "zh-CN": "对"
+    },
+    "status": {
+        "en-US": "Status",
+        "vi-VN": "Trạng thái",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "status",
+        "zh-CN": "状态"
+    },
+    "amount-filled": {
+        "en-US": "Filled",
+        "vi-VN": "Tỷ lệ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Amaun yang diisi",
+        "zh-CN": "填充量"
+    },
+    "actions": {
+        "en-US": "Actions",
+        "vi-VN": "Thao tác",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tindakan",
+        "zh-CN": "行动"
+    },
+    "active-orders": {
+        "en-US": "Active orders",
+        "vi-VN": "Lệnh chờ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pesanan Aktif",
+        "zh-CN": "有效订单"
+    },
+    "closed-orders": {
+        "en-US": "Closed orders",
+        "vi-VN": "Lệnh đã đóng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pesanan Tutup",
+        "zh-CN": "完成订单"
+    },
+    "kyc": {
+        "en-US": "KYC",
+        "vi-VN": "KYC",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "KYC",
+        "zh-CN": "KYC"
+    },
+    "please-check-email-to-verify-your-account": {
+        "en-US": "Please check email to active your account!",
+        "vi-VN": "Vui lòng kiểm tra email của bạn để được hướng dẫn kích hoạt tài khoản.",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sila semak e-mel untuk mengaktifkan akaun anda!",
+        "zh-CN": "请检查电子邮件以激活您的帐户！"
+    },
+    "resend-verify-mail-successfull": {
+        "en-US": "Resend mail successful!",
+        "vi-VN": "Gửi email kích hoạt thành công.",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "your-withdrawal-is-verified": {
+        "en-US": "Your Withdrawal Is Verified",
+        "vi-VN": "Xác thực rút tiền thành công",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Hantar semula E-mel berjaya!",
+        "zh-CN": "重新发送邮件成功！"
+    },
+    "try-again": {
+        "en-US": "Try again",
+        "vi-VN": "Thử lại",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "cuba lagi",
+        "zh-CN": "重新尝试"
+    },
+    "processing": {
+        "en-US": "Processing...",
+        "vi-VN": "Hệ thống đang xử lí...",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sedang Diproses",
+        "zh-CN": "处理中"
+    },
+    "go-back": {
+        "en-US": "Go back",
+        "vi-VN": "Trờ về",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "pulang",
+        "zh-CN": "回去"
+    },
+    "country": {
+        "en-US": "Country",
+        "vi-VN": "Quốc gia",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Negara",
+        "zh-CN": "国家"
+    },
+    "please-login-to-access": {
+        "en-US": "Please login to access",
+        "vi-VN": "Vui lòng đăng nhập để sử dụng tính năng này",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sila log masuk untuk mengakses",
+        "zh-CN": "请登录访问"
+    },
+    "login-register": {
+        "en-US": "Login/Register",
+        "vi-VN": "Đăng nhập / Đăng ký",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Log masuk / Daftar",
+        "zh-CN": "登录/注册"
+    },
+    "wallet": {
+        "en-US": "Wallet",
+        "vi-VN": "Ví tiền",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Dompet",
+        "zh-CN": "钱包"
+    },
+    "profit": {
+        "en-US": "Profit",
+        "vi-VN": "Lợi nhuận",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Untung",
+        "zh-CN": "利润"
+    },
+    "trade": {
+        "en-US": "Trade",
+        "vi-VN": "Thương mại",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Berdagang",
+        "zh-CN": "交易"
+    },
+    "open": {
+        "en-US": "Open",
+        "vi-VN": "Open",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Buka",
+        "zh-CN": "开放"
+    },
+    "closed": {
+        "en-US": "Closed",
+        "vi-VN": "Closed",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tutup",
+        "zh-CN": "关闭"
+    },
+    "copied-affiliation-code": {
+        "en-US": "Copied affiliation code",
+        "vi-VN": "Sao chép mã giới thiệu thành công",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Ahli telah disalin",
+        "zh-CN": "复制的会员代码"
+    },
+    "genernal": {
+        "en-US": "General",
+        "vi-VN": "Thông tin chung",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Umum",
+        "zh-CN": "一般"
+    },
+    "commissions": {
+        "en-US": "Commissions",
+        "vi-VN": "Huê hồng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "komisen",
+        "zh-CN": "佣金"
+    },
+    "CANNOT_FIND_EXCHANGE_RATE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari kadar pertukaran",
+        "zh-CN": "找不到汇率"
+    },
+    "INVALID_ADDRESS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "alamat tidak sah",
+        "zh-CN": "无效地址"
+    },
+    "INVALID_COIN": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "COIN_MUST_EXIST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "koin tidak sah",
+        "zh-CN": "无效货币"
+    },
+    "OUT_OF_AVAILABLE_WALLETS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kehabisan dompet yang ada",
+        "zh-CN": "没有可用的钱包"
+    },
+    "INVALID_NUMBER_OF_INTERNAL_ADDRESS_WALLETS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "nombor alamat dompet dalaman yang tidak sah",
+        "zh-CN": "内部钱包地址无效"
+    },
+    "INVALID_PARTNER_ID": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "rakan kongsi",
+        "zh-CN": "伙伴"
+    },
+    "INVALID_PARTNER_STATUS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "status rakan kongsi tidak sah",
+        "zh-CN": "无效的合作伙伴身份"
+    },
+    "INVALID_IDENTITY": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "identiti tidak sah",
+        "zh-CN": "身份无效"
+    },
+    "VALUE_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "NILAI DIPERLUKAN",
+        "zh-CN": "需填写价值"
+    },
+    "INVALID_VALUE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Nilai Tidak Sah",
+        "zh-CN": "价值无效"
+    },
+    "INSUFFICIENT_FUNDS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Dana tidak mencukupi",
+        "zh-CN": "金额不足"
+    },
+    "INVALID_PARTNER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Rakan Kongsi Tidak Sah",
+        "zh-CN": "无效的合作伙伴"
+    },
+    "INVALID_HASH": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "hash tidak sah",
+        "zh-CN": "无效的哈希"
+    },
+    "MUST_HAVE_EDIT_RATE_PERMISSION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "MESTI MENDAPATKAN KEBENARAN EDIT",
+        "zh-CN": "必须具有编辑率权限"
+    },
+    "INVALID_COIN_ID": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "ID Koin Tidak Sah",
+        "zh-CN": "无效的硬币ID"
+    },
+    "CANNOT_EDIT_ETH_RATE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mengedit kadar ETH",
+        "zh-CN": "无法编辑ETH汇率"
+    },
+    "INVALID_TRANSACTION_ID": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "id transaksi tidak sah",
+        "zh-CN": "无效的交易编号"
+    },
+    "CANNOT_FIND_TRANSACTION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari transaksi",
+        "zh-CN": "找不到交易"
+    },
+    "NUMBER_OF_ITEMS_PER_PAGE_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bilangan item setiap halaman diperlukan",
+        "zh-CN": "每页需要的物品数目"
+    },
+    "CANNOT_FIND_TRANSACTION_REQUEST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari permintaan transaksi",
+        "zh-CN": "找不到交易请求"
+    },
+    "FROZEN_ACCOUNT_CANNOT_TRANSFER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "akaun yang dibekukan tidak dapat dipindahkan",
+        "zh-CN": "冻结帐户无法转移"
+    },
+    "PIN_CODE_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod PIN diperlukan",
+        "zh-CN": "必须输入PIN码"
+    },
+    "INVALID_PIN_CODE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod PIN tidak sah",
+        "zh-CN": "PIN码无效"
+    },
+    "ANOTHER_TRANSACTION_REQUEST_IS_PENDING": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "PERMINTAAN TRANSAKSI LAIN SEDANG MENUNGGU",
+        "zh-CN": "另一个交易请求正在等待中"
+    },
+    "INVALID_FEE_COIN_ID": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Yuran Koin tidah sah",
+        "zh-CN": "无效的硬币费"
+    },
+    "RECEIVER_EMAIL_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "e-mel penerima diperlukan",
+        "zh-CN": "收件人电子邮件为必填项"
+    },
+    "RECEIVER_IS_NOT_EXIST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Penerima Tidak Muncul",
+        "zh-CN": "收件人不存在"
+    },
+    "TOO_LONG_DESCRIPTION_LENGTH": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "panjang keterangan yang terlalu panjang",
+        "zh-CN": "说明长度太长"
+    },
+    "FROZEN_ACCOUNT_CANNOT_WITHDRAW": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Akaun yang dibeku tidak boleh membuat pengeluaran",
+        "zh-CN": "冻结的账户无法提款"
+    },
+    "EXTERNAL_WALLET_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "dompet luaran diperlukan",
+        "zh-CN": "需要外部钱包"
+    },
+    "UNSUPPORTED_WITHDRAW_FEE_COIN": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Yuran pengeluaran koin yang tidak disokong",
+        "zh-CN": "货币提款费不受支持"
+    },
+    "UNSUPPORT_PAY_FEE_WITH_ANOTHER_COIN": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Yuran pembayaran tidak menyokong dengan koin lain",
+        "zh-CN": "不支持使用另一种货币支付费用"
+    },
+    "INVALID_CODE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Tidak Sah",
+        "zh-CN": "代码无效"
+    },
+    "KYC_HAVE_NOT_BEEN_UPLOADED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "KYC_MUST_BE_PENDING": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kyc belum dimuat naik",
+        "zh-CN": "尚未上传KYC"
+    },
+    "MUST_UPLOAD_FULL_KYC": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "mesti muat naik KYC penuh",
+        "zh-CN": "必须上传完整的KYC"
+    },
+    "ONLY_EMAIL_VERIFIED_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "HANYA EMAIL PENGGUNA YANG DISAHKAN",
+        "zh-CN": "仅通过电子邮件验证的用户"
+    },
+    "KYC_EXISTED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "INVALID_PAGE_SIZE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "KYC ada",
+        "zh-CN": "KYC 存在"
+    },
+    "INVALID_OFFSET": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "INVALID_NOTIFICATION_IDS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "ofset tidak sah",
+        "zh-CN": "无效的偏移"
+    },
+    "CANNOT_FIND_ORDER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari pesanan",
+        "zh-CN": "找不到委托"
+    },
+    "UNSUPPORTED_TYPE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "jenis yang tidak disokong",
+        "zh-CN": "不支持的类型"
+    },
+    "INVALID_PAGE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "halaman tidak sah",
+        "zh-CN": "无效页面"
+    },
+    "CANNOT_FIND_SYMBOL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari simbol",
+        "zh-CN": "找不到标志"
+    },
+    "WAITING": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sedang menunggu",
+        "zh-CN": "等待中"
+    },
+    "ACTIVE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Aktif",
+        "zh-CN": "活跃"
+    },
+    "LEFT": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kiri",
+        "zh-CN": "左"
+    },
+    "RIGHT": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kanan",
+        "zh-CN": "右"
+    },
+    "PENDING": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "yang belum selesai",
+        "zh-CN": "待定"
+    },
+    "APPROVED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Dilulus",
+        "zh-CN": "已批准"
+    },
+    "REJECTED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Ditolak",
+        "zh-CN": "已拒绝"
+    },
+    "REFRESH_BALANCE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Menyegarkan Baki",
+        "zh-CN": "刷新余额"
+    },
+    "NEW_TRANSACTION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Transaksi Baru",
+        "zh-CN": "新交易"
+    },
+    "OPEN": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Buka",
+        "zh-CN": "开放"
+    },
+    "PARTIALLY_FILLED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "diisi sebahagian",
+        "zh-CN": "部分填充"
+    },
+    "FILLED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Diisi",
+        "zh-CN": "填充"
+    },
+    "CANCELED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Dibatal",
+        "zh-CN": "已取消"
+    },
+    "EXPIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tamat",
+        "zh-CN": "已过期"
+    },
+    "LIMIT": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Had",
+        "zh-CN": "限定"
+    },
+    "MARKET": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Pasar",
+        "zh-CN": "市场"
+    },
+    "BUY": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Membeli",
+        "zh-CN": "购买"
+    },
+    "SELL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Menjual",
+        "zh-CN": "售卖"
+    },
+    "NOT_READY": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak bersedia",
+        "zh-CN": "没有准备好"
+    },
+    "SUCCESS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Berjaya",
+        "zh-CN": "成功"
+    },
+    "FAIL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Gagal",
+        "zh-CN": "失败"
+    },
+    "PROCESSING": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Sedang Diproses",
+        "zh-CN": "处理中"
+    },
+    "DUPLICATE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Salinan",
+        "zh-CN": "重复"
+    },
+    "CALL_LATER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "panggil kemudian",
+        "zh-CN": "待会儿再聊"
+    },
+    "UNEXPECTED_ERROR": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Ralat yang tidak dijangka",
+        "zh-CN": "意外的错误"
+    },
+    "JUST_CREATED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "baru dibuat",
+        "zh-CN": "刚创建"
+    },
+    "ACCEPTED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Diterima",
+        "zh-CN": "已被接受"
+    },
+    "DISABLED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Dihenti",
+        "zh-CN": "已禁用"
+    },
+    "PAY_FOR_MINER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bayar pelombong",
+        "zh-CN": "支付矿工"
+    },
+    "CALCULATE_SYSTEM_INDEX": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "hitung indeks sistem",
+        "zh-CN": "计算系统索引"
+    },
+    "PAY_SYSTEM_COMMISSION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bayaran sistem komisen",
+        "zh-CN": "支付系统佣金"
+    },
+    "PAY_RANK_COMMISSION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bayar komisen pangkat",
+        "zh-CN": "支付阶级佣金"
+    },
+    "UPDATE_INVESTMENT_STATUS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kemas kini status pelaburan",
+        "zh-CN": "更新投资状态"
+    },
+    "HOUR": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "JAM",
+        "zh-CN": "小时"
+    },
+    "DATE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tarikh",
+        "zh-CN": "日期"
+    },
+    "MONTH": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Bulan",
+        "zh-CN": "月份"
+    },
+    "FAILED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Gagal",
+        "zh-CN": "已失败"
+    },
+    "created": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Dicipta",
+        "zh-CN": "已创建"
+    },
+    "value": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Nilai",
+        "zh-CN": "价值"
+    },
+    "email": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "E-mel",
+        "ms-MY": "邮箱",
+        "zh-CN": ""
+    },
+    "KYC_REVIEW": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kajian kyc",
+        "zh-CN": "kyc评论"
+    },
+    "DISABLE_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Lumpuhkan Pengguna",
+        "zh-CN": "禁用用户"
+    },
+    "ENABLE_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "aktifkan pengguna",
+        "zh-CN": "启用用户"
+    },
+    "EDIT_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Edit Pengguna",
+        "zh-CN": "编辑用户"
+    },
+    "VIEW_USERS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Lihat Pengguna",
+        "zh-CN": "查看用户"
+    },
+    "EDIT_RATE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Edit Kadar",
+        "zh-CN": "编辑汇率"
+    },
+    "VIEW_TRANSACTIONS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Lihat Transaksi",
+        "zh-CN": "查看交易转账"
+    },
+    "UPDATE_PERMISSION": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kebenaran kemas kini",
+        "zh-CN": "更新权限"
+    },
+    "VIEW_WITHDRAW_PROGRESS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Lihat Proses Pengeluaran",
+        "zh-CN": "查看提款进度"
+    },
+    "REVIEW_WITHDRAW": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Semakan Pengeluaran",
+        "zh-CN": "审查提款"
+    },
+    "CHANGE_SERVER_CONFIG": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "menukar konfigurasi pelayan",
+        "zh-CN": "更改服务器配置"
+    },
+    "VIEW_REPORT": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Lihat Laporan",
+        "zh-CN": "查看报告"
+    },
+    "ENABLE_PARTNER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "aktifkan rakan kongsi",
+        "zh-CN": "启用合作伙伴"
+    },
+    "DISABLE_PARTNER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "lumpuhkan rakan kongsi",
+        "zh-CN": "禁用合作伙伴"
+    },
+    "JUST_REGISTERED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "baru mendaftar",
+        "zh-CN": "刚刚注册"
+    },
+    "EMAIL_VERIFIED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "e-mel disahkan",
+        "zh-CN": "电子邮件已验证"
+    },
+    "KYC_CONFIRMED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "KYC disahkan",
+        "zh-CN": "KYC已确认"
+    },
+    "INTERNATIONAL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Antarabangsa",
+        "zh-CN": "国际"
+    },
+    "DOMESTIC": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Dalam Negeri",
+        "zh-CN": "国内"
+    },
+    "START_SEND_REQUEST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Memulakan Hantaran Pesanan",
+        "zh-CN": "开始发送委托"
+    },
+    "WAIT_FOR_MINED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tunggu dilombong",
+        "zh-CN": "等待开采"
+    },
+    "ROOT_USER_ID_IS_INVALID": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "id pengguna tidak sah",
+        "zh-CN": "用户ID无效"
+    },
+    "ROOT_USER_MUST_BELONG_TO_CURRENT_USER_SYSTEM": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "pengguna mesti tergolong dalam sistem pengguna semasa",
+        "zh-CN": "用户必须属于当前用户系统"
+    },
+    "NUMBER_OF_LEVELS_FROM_ROOT_MUST_BE_POSITIVE_INTEGER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "NOMBOR TINGKAT DARI ROOT MESTI INTEGER POSITIF",
+        "zh-CN": "根的级别数必须为正整数"
+    },
+    "NUMBER_OF_LEVELS_IS_OUT_OF_RANGE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bilangan tahap berada di luar jangkauan",
+        "zh-CN": "级别数超出范围"
+    },
+    "CANNOT_FIND_ROOT_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari pengguna root",
+        "zh-CN": "找不到root用户"
+    },
+    "INVALID_PASSWORD": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kata Laluan Tidak Sah",
+        "zh-CN": "密码无效"
+    },
+    "INCORRECT_CURRENT_PASSWORD": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kata laluan semasa tidak betul",
+        "zh-CN": "当前密码错误"
+    },
+    "PASSWORD_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kata Laluan diperlukan",
+        "zh-CN": "需要输入密码"
+    },
+    "OLD_PIN_CODE_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod PIN Lama diperlukan",
+        "zh-CN": "需要输入旧的PIN码"
+    },
+    "NEW_PIN_CODE_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod PIN Baru diperlukan",
+        "zh-CN": "需要输入新的PIN码"
+    },
+    "INVALID_PIN_CODE_FORMAT": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Format kod pin yang tidak betul",
+        "zh-CN": "无效的PIN密码格式"
+    },
+    "INVALID_OLD_PIN_CODE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod PIN Lama tidak sah",
+        "zh-CN": "您旧的PIN码无效"
+    },
+    "EMAIL_EXISTED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "e-mel ada",
+        "zh-CN": "电子邮件存在"
+    },
+    "INVALID_EMAIL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "E-mel tidak sah",
+        "zh-CN": "电子邮件无效"
+    },
+    "INVALID_FIRST_NAME": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Name Pertama tidak sah",
+        "zh-CN": "名字无效"
+    },
+    "INVALID_LAST_NAME": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Name Terakhir tidah sah",
+        "zh-CN": "姓氏无效"
+    },
+    "CANNOT_FIND_PRESENTER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak menemui penyampai",
+        "zh-CN": "找不到主持人"
+    },
+    "INVALID_RESET_PASSWORD_CODE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Tukar kata laluan tidak sah",
+        "zh-CN": "重置密码代码无效"
+    },
+    "RESET_PASSWORD_CODE_EXPIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Tukar Kata Laluan Telah Tamat",
+        "zh-CN": "重置密码代码已过期"
+    },
+    "CANNOT_FIND_EMAIL": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tidak Dapat Mencari E-mel",
+        "zh-CN": "找不到电子邮箱"
+    },
+    "CANCELLED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Telah Dibatalkan",
+        "zh-CN": "已取消"
+    },
+    "CURRENT_PASSWORD_IS_REQUIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kata Laluan Semasa diperlukan",
+        "zh-CN": "需要输入当前密码"
+    },
+    "INVALID_CURRENT_PASSWORD": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kata Laluan Semasa tidak sah",
+        "zh-CN": "当前密码无效"
+    },
+    "CANNOT_FIND_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Tidak dapat mencari pengguna",
+        "zh-CN": "找不到用户"
+    },
+    "TARGETED_USER_HAS_NOT_CONFIRMED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "pengguna yang disasarkan belum disahkan",
+        "zh-CN": "目标用户尚未确认"
+    },
+    "INVALID_NUMBER_OF_ITEMS_PER_PAGE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "bilangan item yang tidak sah setiap halaman",
+        "zh-CN": "每页无效的物品数目"
+    },
+    "INVALID_STATUS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Status tidak sah",
+        "zh-CN": "状态无效"
+    },
+    "EMAIL_DOES_NOT_EXIST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "E-mel tidah ada",
+        "zh-CN": "电子邮箱不存在"
+    },
+    "DISABLED_USER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "pengguna lumpuh",
+        "zh-CN": "禁用用户"
+    },
+    "INVALID_TOKEN": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Token tidak sah",
+        "zh-CN": "无效代币"
+    },
+    "INVALID_USER_STATUS": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Status Pengguna tidak sah",
+        "zh-CN": "用户状态无效"
+    },
+    "AFFILIATION_CODE_MUST_EXIST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Ahli Rakan Kongsi Mesti Ada",
+        "zh-CN": "会员合作伙伴代码必须存在"
+    },
+    "INVALID_PHONE_NUMBER": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Nombor Telefon tidak sah",
+        "zh-CN": "联络号码无效"
+    },
+    "COUNTRY_MUST_EXIST": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Negara mesti ada",
+        "zh-CN": "国家必须存在"
+    },
+    "CANNOT_FIND_VERIFICATION_CODE": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "tidak dapat mencari kod pengesahan",
+        "zh-CN": "找不到验证码"
+    },
+    "REGISTER_CODE_EXPIRED": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "Kod Pendaftaran telah tamat",
+        "zh-CN": "注册代码已过期"
+    },
+    "PIN_CODE_HAVE_BEEN_SET_ALREADY": {
+        "en-US": "",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "kod pin telah ditetapkan",
+        "zh-CN": "PIN密码已设置"
+    },
+    "transfer": {
+        "en-US": "Transfer",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate": {
+        "en-US": "Affiliate",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "quick-deposit": {
+        "en-US": "Quick deposit",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "fill-demo-successful": {
+        "en-US": "Fill demo balance successful.",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "switch-account-type": {
+        "en-US": "Switch account type",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "live-account": {
+        "en-US": "Live Account",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "demo-account": {
+        "en-US": "Demo Account",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "all": {
+        "en-US": "All",
+        "vi-VN": "Tất cả",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "up": {
+        "en-US": "Up",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "down": {
+        "en-US": "Down",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "available": {
+        "en-US": "Available",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "traders-sentiments": {
+        "en-US": "Traders sentiments",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "droplets": {
+        "en-US": "Droplets",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "necklaces": {
+        "en-US": "Necklaces",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "last-count-results": {
+        "en-US": "Last {count} results",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "rank": {
+        "en-US": "Rank",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "rank-conditions": {
+        "en-US": "Rank Conditions",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "f1-volume-this-week": {
+        "en-US": "F1 Volume (This week)",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "f1-agency": {
+        "en-US": "F1 Agency",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "total-refferals": {
+        "en-US": "Total refferals",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "total-agencies": {
+        "en-US": "Total agencies",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "trading-commission": {
+        "en-US": "Trading commission",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "agency-commission": {
+        "en-US": "Agency Commission",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "share-link-to-your-friends": {
+        "en-US": "Share link to your friends",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "your-kyc-was-approved": {
+        "en-US": "Your KYC was approved",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "you-must-provide-kyc-to-verify-your-account": {
+        "en-US": "You must provide KYC to verify your account",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "please-wait-for-admin-verify-your-kyc": {
+        "en-US": "Please wait for admin verify your KYC",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "avatar": {
+        "en-US": "Avatar",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "passport-front-image": {
+        "en-US": "Passport front image",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "passport-back-image": {
+        "en-US": "Passport back image",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "upload-your-kyc-successful": {
+        "en-US": "Upload your KYC successful",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "information": {
+        "en-US": "Information",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "referral-sponsor": {
+        "en-US": "Referral sponsor",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-introduce-title": {
+        "en-US": "You need to buy Agency license to receive agency commissions and trading commissions",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-invite-friends": {
+        "en-US": "Invite Friends",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-invite-friends-exceprt": {
+        "en-US": "Invite friends to register winsbinary through the link",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-friend-sign-up": {
+        "en-US": "Friend sign-up",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-friend-sign-up-exceprt": {
+        "en-US": "Friends accept the invitation complete registration and play",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-get-a-corresponding-proportion-of": {
+        "en-US": "Get a corresponding proportion of commission",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "affiliate-get-a-corresponding-proportion-of-exceprt": {
+        "en-US": "Easily get commission",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-1": {
+        "en-US": "1",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-2": {
+        "en-US": "2",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-3": {
+        "en-US": "3",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-4": {
+        "en-US": "4",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-5": {
+        "en-US": "5",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-6": {
+        "en-US": "6",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-7": {
+        "en-US": "7",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-8": {
+        "en-US": "8",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "number-9": {
+        "en-US": "9",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "buy-now-value": {
+        "en-US": "Buy now {value}",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "buy-agency-license-successful": {
+        "en-US": "Buy agency license successful",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "exchange-currencies": {
+        "en-US": "Exchange currencies",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "exchange-history": {
+        "en-US": "Exchange history",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "send": {
+        "en-US": "Send",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "receive": {
+        "en-US": "Receive",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "select": {
+        "en-US": "Select",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "transactions": {
+        "en-US": "Transactions",
+        "vi-VN": "Giao dịch",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-send-email-recovery-password-success": {
+        "en-US": "Request recovery password successful. Please check your mailbox.",
+        "vi-VN": "Gửi yêu cầu khôi phục mật khẩu thành công. Bạn vui lòng kiểm tra email để được hướng dẫn.",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-recovery-password-success": {
+        "en-US": "Recovery your password successful. Please login to access.",
+        "vi-VN": "Khôi phục mật khẩu thành công. Bạn vui lòng đăng nhập.",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "deposit-now": {
+        "en-US": "Deposit now",
+        "vi-VN": "Nạp tiền ngay",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "trade-time-in-sync": {
+        "en-US": "In sync time",
+        "vi-VN": "Đang đồng bộ",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "trade-time-processing": {
+        "en-US": "Processing time",
+        "vi-VN": "Đang xử lí",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "trade-time-active": {
+        "en-US": "Active time",
+        "vi-VN": "Kích hoạt",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "trade-time-waiting": {
+        "en-US": "Waiting time",
+        "vi-VN": "Đợi",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-place-order-success": {
+        "en-US": "Place order successful!",
+        "vi-VN": "Đặt lệnh thành công!",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "rule-password": {
+        "en-US": "8-23 letters and numbers",
+        "vi-VN": "Phải từ 8-23 ký tự",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-win-title": {
+        "en-US": "Congratulations!",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-win-message": {
+        "en-US": "You have made successful trades in a row. If you had traded on a real account, you would have earned:",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "receiver-email-address": {
+        "en-US": "Receiver email address",
+        "vi-VN": "Địa chỉ email người nhận",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "pin-code": {
+        "en-US": "PIN Code",
+        "vi-VN": "Mã PIN",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "update-pin-code": {
+        "en-US": "Update Pin Code",
+        "vi-VN": "Cập nhật mã PIN",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "old-pin-code": {
+        "en-US": "Old Pin Code",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "new-pin-code": {
+        "en-US": "New Pin Code",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-update-pin-code-success": {
+        "en-US": "Update PIN code success!",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-set-pin-code-success": {
+        "en-US": "Set PIN code success!",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "alert-request-transfer-success": {
+        "en-US": "Request transfer success",
+        "vi-VN": "",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "candle-balance": {
+        "en-US": "Blance",
+        "vi-VN": "Cân bằng",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "dashboard": {
+        "en-US": "Dashboard",
+        "vi-VN": "Báo cáo",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    },
+    "welcome": {
+        "en-US": "Welcome",
+        "vi-VN": "Xin chào",
+        "ja-JP": "",
+        "th-TH": "",
+        "id-ID": "",
+        "ms-MY": "",
+        "zh-CN": ""
+    }
+}

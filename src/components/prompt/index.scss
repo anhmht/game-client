@@ -1,0 +1,85 @@
+@import "../../module.variables";
+
+.Prompt {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.7);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    overflow: auto;
+
+    .box {
+        width: 700px;
+        max-width: 100%;
+        border-radius: $borderRadius;
+        box-shadow: $boxShadow;
+        height: max-content;
+        background: $dark;
+
+        .head {
+            padding: 15px;
+            color: $primary;
+            border-bottom: 1px solid $offDark;
+            font-size: 1.3em;
+        }
+
+        .content {
+            padding: 15px;
+
+            input {
+                border: 1px solid $borderColor;
+                width: 100%;
+                border-radius: $borderRadius;
+                height: $inputHeight;
+                background: transparent;
+                outline: none;
+                padding: 0px 10px;
+                font-size: 16px;
+                font-weight: 400;
+                color: $white;
+                margin-top: 15px;
+
+                &.hasError {
+                    border: 1px solid $danger;
+                }
+
+                &:focus {
+                    border-color: $primary;
+                }
+            }
+
+            .error {
+                padding: 10px 0px;
+                display: flex;
+                align-items: center;
+                color: $danger;
+
+                svg {
+                    height: 14px;
+                    margin-right: 5px;
+
+                    * {
+                        fill: $danger;
+                    }
+                }
+            }
+        }
+
+        .ctas {
+            padding: 10px 15px;
+            border-top: 1px solid $offDark;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > * {
+                margin: 0 5px;
+            }
+        }
+    }
+}

@@ -1,0 +1,133 @@
+@import "../../module.variables.scss";
+
+.Noti {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 35%;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 999;
+
+  font-size: 15px;
+  // width: 450px;
+  // padding: 40px;
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: rgba($color: $primary, $alpha: 0.5);
+  }
+  .Noti__Item {
+    width: 100%;
+    min-height: 70px;
+
+    border-radius: $borderRadius;
+    background-image: linear-gradient(to bottom, #222b45, #121726);
+    border: 1px solid $primary;
+    margin-bottom: 25px;
+    position: relative;
+
+    .content {
+      flex: 1;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      min-height: 120px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $primary;
+        font-size: 1.2em;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      .message {
+        color: $white;
+        word-break: break-word;
+        font-size: 0.9em;
+        line-height: 1.5em;
+      }
+    }
+
+    .btnRemove {
+      min-height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      border-radius: 50%;
+      transition: 0.3s ease;
+
+      position: absolute;
+      top: -30px;
+      right: -30px;
+
+      svg {
+        height: 12px;
+
+        * {
+          fill: rgba($color: $white, $alpha: 0.5);
+        }
+      }
+
+      &:hover {
+        svg {
+          * {
+            fill: rgba($color: $white, $alpha: 1);
+          }
+        }
+      }
+    }
+  }
+
+  .Noti__Item {
+    &.success {
+      border-left: 5px solid $success;
+
+      .icon svg * {
+        fill: $success;
+      }
+    }
+
+    &.danger {
+      border-left: 5px solid $danger;
+
+      .icon svg * {
+        fill: $danger;
+      }
+    }
+
+    &.warning {
+      border-left: 5px solid $warning;
+
+      .icon svg * {
+        fill: $warning;
+      }
+    }
+  }
+
+  .Noti__Item-enter {
+    opacity: 0;
+  }
+  .Noti__Item-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+  .Noti__Item-exit {
+    opacity: 1;
+  }
+  .Noti__Item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+}

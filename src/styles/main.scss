@@ -1,0 +1,444 @@
+@import "../module.variables.scss";
+@import "../modules/styles";
+@import "./modules.custom.scss";
+@import "../components";
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+html,
+body {
+    font-family: "ITC Kabel Std" !important;
+    font-size: 18px;
+    color: #fff !important;
+    width: 100%;
+    height: 100%;
+    background: var(--body-color) !important;
+}
+
+#__next {
+    width: 100%;
+    height: 100%;
+}
+
+// ============================ Input style ================================
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    background-color: transparent;
+    -webkit-text-fill-color: $grey;
+    box-shadow: unset !important;
+    transition: background-color 5000s ease-in-out 0s;
+    font-size: 1em;
+}
+
+// ============================ End Input style ============================
+// ============================ Link style ================================
+// ============================ End Link style ============================
+// ============================ Element style ================================
+// img {
+//     max-width: 100%;
+// }
+// ============================ End Element style ============================
+// ============================ Layout style ================================
+.textRight {
+    text-align: right !important;
+}
+
+.textLeft {
+    text-align: left !important;
+}
+
+.textBold {
+    font-weight: 600;
+    color: $dark;
+}
+
+@for $i from 50 to 200 {
+    .w#{$i} {
+        width: $i + unquote("px");
+    }
+}
+
+@for $i from 0 to 100 {
+    .mb#{$i} {
+        margin-bottom: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .mt#{$i} {
+        margin-top: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .mr#{$i} {
+        margin-right: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .ml#{$i} {
+        margin-left: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .mx#{$i} {
+        margin-left: $i + unquote("px") !important;
+        margin-right: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .my#{$i} {
+        margin-top: $i + unquote("px") !important;
+        margin-bottom: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdb#{$i} {
+        padding-bottom: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdt#{$i} {
+        padding-top: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdr#{$i} {
+        padding-right: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdl#{$i} {
+        padding-left: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pd#{$i} {
+        padding: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdx#{$i} {
+        padding-left: $i + unquote("px") !important;
+        padding-right: $i + unquote("px") !important;
+    }
+}
+
+@for $i from 0 to 100 {
+    .pdy#{$i} {
+        padding-top: $i + unquote("px") !important;
+        padding-bottom: $i + unquote("px") !important;
+    }
+}
+
+.wfull {
+    width: 100%;
+}
+
+.sticky {
+    position: sticky;
+    &.top30 {
+        top: 30px;
+    }
+}
+
+// ============================ End Layout style ============================
+// ============================ Scrollbar style ================================
+* {
+    /* width */
+     ::-webkit-scrollbar {
+        width: 15px;
+        height: 4px;
+    }
+    /* Track */
+     ::-webkit-scrollbar-track {
+        background: #e6e6e6;
+        border-radius: 12px;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: #cccaca;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        &:hover {
+            background: $primary;
+        }
+    }
+}
+
+// ============================ End Scrollbar style ============================
+// ============================ Typograrphy style ================================
+.textPrimary {
+    color: $primary !important;
+}
+
+.textDanger {
+    color: $danger !important;
+}
+
+.textSuccess {
+    color: $success !important;
+}
+
+.textRegisterSuccess {
+    color: $success !important;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 24px;
+    text-transform: capitalize;
+}
+
+.textWarning {
+    color: #ff9d00 !important;
+}
+
+.textInfo {
+    color: $info !important;
+}
+
+// ============================ End Typograrphy style ============================
+// ============================ Page Head style ================================
+.PageHead {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    .title {
+        font-size: 1.4em;
+        display: flex;
+        align-items: center;
+        svg {
+            height: 22px;
+            margin-right: 7px;
+            * {
+                fill: $dark;
+            }
+        }
+    }
+}
+
+// ============================ End Page Head style ============================
+// ============================ Circle style ================================
+.circle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 7px;
+    &.success {
+        background: $success;
+    }
+}
+
+// ============================ End Circle style ============================
+// ============================ SPINNER STYLE ================================
+svg.spinner {
+    & .path {
+        stroke: $grey;
+    }
+}
+
+// ============================ End SPINNER STYLE ============================
+// ============================ Form Note style ================================
+.formNote {
+    color: $white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    svg {
+        height: 17px;
+        margin-bottom: -3px;
+        margin-right: 7px;
+        * {
+            fill: $white;
+        }
+    }
+}
+
+// ============================ End Form Note style ============================
+// ============================ Link Affiliation style ================================
+.linkAffiliation {
+    border-bottom: 1px solid $offDark;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    .label {
+        margin-bottom: 10px;
+        font-size: 0.9em;
+        color: $white;
+    }
+    .value {
+        display: flex;
+        align-items: center;
+        color: $white;
+        min-height: 44px;
+        background: rgba($color: $white, $alpha: 0.1);
+        padding: 10px;
+        border-radius: $borderRadius;
+        cursor: pointer;
+        p {
+            flex: 1;
+            width: 100%;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            svg {
+                height: 15px;
+                * {
+                    fill: $white;
+                }
+            }
+        }
+    }
+}
+
+// ============================ End Link Affiliation style ============================
+// ============================ Recaptcha style ================================
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+// ============================ End Recaptcha style ============================
+// ============================ Table style ================================
+.hideTableHead {
+    thead {
+        display: none;
+    }
+}
+
+.rowInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+// ============================ End Table style ============================
+// ============================ Page Background Map style ================================
+.pageBackgroundMap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 30px;
+    width: 1100px;
+    max-width: 90%;
+    opacity: 0.02;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// ============================ End Page Background Map style ============================
+// ============================ Number Report Card style ================================
+.NumberReportCard {
+    border-radius: $borderRadius;
+    background: #161616;
+    padding: 25px;
+    // margin-bottom: 15px;
+    height: 100%;
+    // .label {
+    // 	font-size: 1.1em;
+    // 	margin-bottom: 10px;
+    // }
+    .value {
+        // font-size: 2em;
+        // font-weight: 400;
+        // color: $white;
+        // display: flex;
+        // align-items: center;
+        span.profitType {
+            border: none;
+            padding: 0;
+        }
+        .iconCoin {
+            display: inline-block;
+            img {
+                height: 30px;
+            }
+        }
+    }
+}
+
+// ============================ End Number Report Card style ============================
+// ============================ Profit Type style ================================
+.profitType {
+    color: $white;
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid $offDark;
+    &.win {
+        color: $primary;
+        border-color: rgba($color: $primary, $alpha: 0.2);
+    }
+    &.lose {
+        color: $danger;
+        border-color: rgba($color: $danger, $alpha: 0.2);
+    }
+}
+
+// ============================ End Profit Type style ============================
+input:-webkit-autofill {
+    -moz-box-shadow: 0 0 0 50px #1a1a33 inset !important;
+    -webkit-box-shadow: 0 0 0 50px #1a1a33 inset;
+    -webkit-text-fill-color: #ffffff;
+    caret-color: #ffffff !important;
+}
+
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+    -moz-box-shadow: 0 0 0 50px #1a1a33 inset !important;
+    -webkit-box-shadow: 0 0 0 50px #1a1a33 inset;
+    -webkit-text-fill-color: #ffffff;
+    caret-color: #ffffff !important;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+    caret-color: #ffffff !important;
+}
+
+input,
+input::placeholder {
+    font-family: "Pixel Operator";
+}
+
+.placeholder-glow {
+    .placeholder {
+        background: #fff !important;
+        border-color: #fff !important;
+        border-radius: 0.5rem !important;
+        pointer-events: none;
+        user-select: none;
+    }
+}

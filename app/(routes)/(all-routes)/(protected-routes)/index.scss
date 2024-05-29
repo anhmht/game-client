@@ -1,0 +1,102 @@
+@import "./personal-information";
+@import "./2fa-setup";
+@import "./change-password";
+@import "./withdrawal-code";
+@import "./deposit";
+@import "./withdraw";
+@import "./overview/";
+@import "./trial-periods";
+@import "./assets/";
+@import "./claim/";
+@import './affiliate-marketing/';
+@import './private-sale';
+@import './deposit-receipt/';
+@import './withdrawal-receipt/';
+@import './airdrop/';
+
+.dasboard-loading {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #fff;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  }
+  .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+  }
+  .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+  }
+  @keyframes lds-ellipsis1 {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @keyframes lds-ellipsis3 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  @keyframes lds-ellipsis2 {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(24px, 0);
+    }
+  }
+  
+}
+.dashboard-layout {
+  width: 100%;
+  position: relative;
+  background-size: 48px 48px;
+  // background-image: linear-gradient(rgba(#d6d6d6, 0.1) 2px, transparent 2px), linear-gradient(to right, rgba(#d6d6d6, 0.1) 2px, transparent 2px);
+  // background-color: #9C00FF;
+  .homepage-header  {
+    display: flex;
+    background: #F2F2F2;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    .homepage-header__left {
+      .homepage-header__left__menu-mobile {
+        svg {
+          * {
+            fill: #F2F2F2;
+          }
+        }
+      }
+    }
+  }
+}

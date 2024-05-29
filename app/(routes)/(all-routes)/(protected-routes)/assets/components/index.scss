@@ -1,0 +1,27 @@
+@import './change-password/';
+@import './transactions-history/';
+
+.pincode-form {
+    .pincode-form__control-indicator {
+        text-align: center;
+        @media (min-width: 768px) {
+            text-align: initial;
+        }
+    }
+    .forgot-pin {
+        transition: 0.25s;
+        cursor: pointer;
+        text-decoration: underline;
+        &:hover {
+            
+        }
+    }
+    .change-pin {
+        transition: 0.25s;
+        cursor: pointer;
+        text-decoration: underline;
+        }
+        &:hover {
+            
+    }
+}

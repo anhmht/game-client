@@ -1,0 +1,44 @@
+{
+    "short_name": "Memelotto",
+    "name": "Memelotto - The premier gaming zone, a trusted gaming web platform",
+    "icons": [{
+            "src": "./favicon.ico",
+            "sizes": "64x64 32x32 24x24 16x16",
+            "type": "image/x-icon"
+        },
+        {
+            "src": "./assets/images/launchericon-48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "./assets/images/launchericon-72x72.png",
+            "type": "image/png",
+            "sizes": "72x72"
+        },
+        {
+            "src": "./assets/images/launchericon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "./assets/images/launchericon-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "./assets/images/launchericon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./assets/images/launchericon-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/user",
+    "display": "standalone",
+    "theme_color": "#ed7523",
+    "background_color": "#1f0039"
+}

@@ -1,0 +1,78 @@
+@import "../../../module.variables";
+.TableFilterInputSelect {
+  background: #262626;
+  width: 100%;
+  border-radius: $borderRadius;
+  // border: 1px solid $borderColor;
+  min-width: 150px;
+  .TableFilterInputSelect__control {
+    border: 1px solid #303030 !important;
+    box-shadow: none !important;
+    height: 40px;
+    font-size: 14px !important;
+    background: #141414;
+    color: #000;
+    .TableFilterInputSelect__value-container {
+      padding: 2px 8px 2px 16px;
+    }
+  }
+  .TableFilterInputSelect__placeholder {
+    color: $grey;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Pixel Operator';
+  }
+  .TableFilterInputSelect__indicator-separator {
+    background: $grey;
+  }
+  .TableFilterInputSelect__indicator {
+    svg {
+      * {
+        fill: $grey;
+      }
+    }
+  }
+  .TableFilterInputSelect__single-value {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Pixel Operator';
+  }
+  .TableFilterInputSelect__input {
+    input {
+      color: #000 !important;
+    }
+  }
+  .TableFilterInputSelect__menu {
+    z-index: 10;
+    background: white;
+    .TableFilterInputSelect__menu-list {
+      // background: #f00;
+      // background: rgba(0, 17, 52, 0.4);
+      .TableFilterInputSelect__option {
+        cursor: pointer;
+        background: white;
+        overflow-x: hidden;
+        padding: 17px 17px;
+        font-size: 14px;
+        color: black;
+        // transition: 0.25s;
+        // -webkit-transition: 0.25s;
+        // -moz-transition: 0.25s;
+        // -ms-transition: 0.25s;
+        // -o-transition: 0.25s;
+        &:hover {
+          background: #e5e5e5;
+          color: #000;
+        }
+      }
+    }
+  }
+  .TableFilterInputSelect__option--is-selected {
+    background: $primary;
+    cursor: default;
+    &:hover {
+      background: $primary;
+    }
+  }
+}

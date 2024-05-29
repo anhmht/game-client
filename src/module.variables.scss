@@ -1,0 +1,306 @@
+// ============================ Required Core style ================================
+$primary: #f1eb4e;
+$success: #198754;
+$info: #0dcaf0;
+$warning: #ffc107;
+$danger: #dc3545;
+$violetHeadPopup: #5e2e86;
+$white: #fff;
+$light: #f7f9fc;
+$dark: #1e1d1c;
+$dark60: rgb(26, 33, 56, 0.6);
+$blue: #3cacfc;
+$actionsPanel: #1c1f32;
+$offDark: #242750;
+$violet: #1f0039;
+$grey: #8f9bb3;
+$darkBg: #161616;
+$text: #fbd5ff;
+$orange: #ed7523;
+$icon: 24px;
+// Layout
+$borderRadius: 5px;
+$borderRadiusNew: 8px;
+$borderColor: rgba(#8f9bb3, 0.3);
+$borderColorNew: rgb(85, 107, 117);
+$boxShadow: 0px 2px 3px
+  rgba(
+    $color: #000000,
+    $alpha: 0.2,
+  );
+$inputHeight: 40px;
+$buttonHeight: 48px;
+$zIndexListSuggests: 102;
+$zIndexTableLoadingData: 103;
+$table-background-color: #0b0b0b;
+$card-background-color: #212472;
+$above-card-background-color: #292d88;
+$form-background-color: #090539;
+$MobileWidthScreen: 600px;
+$primary-background-color: #2C1C36;
+$secondary-background-color: #3D274B;
+// Mixin Styles
+@mixin borderBox {
+  border: 1px solid $grey;
+}
+
+/* Typography */
+
+@font-face {
+  font-family: "Pixel Operator";
+  src: url("/assets/fonts/PixelOperator.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel Operator";
+  src: url("/assets/fonts/PixelOperator-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel Operator Mono";
+  src: url("/assets/fonts/PixelOperatorMono.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel Operator Mono";
+  src: url("/assets/fonts/PixelOperatorMono-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel Operator Mono HB";
+  src: url("/assets/fonts/PixelOperatorMonoHB.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pixel Operator HB";
+  src: url("/assets/fonts/PixelOperatorHB.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/assets/fonts/PressStart2P-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin btnStyle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
+  > svg {
+    height: 16px;
+    margin-right: 10px;
+  }
+  &:disabled {
+    background: rgba($color: $grey, $alpha: 1);
+    opacity: 0.2;
+    cursor: not-allowed;
+    color: $white;
+    border-color: $grey;
+    &:hover {
+      background: rgba($color: $grey, $alpha: 1);
+      opacity: 0.2;
+      color: $white;
+      border-color: $grey;
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin btnDarkColor($color) {
+  @include btnStyle;
+  background: $color;
+  border: 1px solid $color;
+  color: $white;
+  transition: 0.25s ease;
+  > svg * {
+    fill: $orange;
+  }
+}
+
+@mixin btnOutlineColor($color) {
+  @include btnStyle;
+  background: none;
+  color: $color;
+  transition: 0.25s ease;
+  opacity: 1;
+  .label {
+    @if $color == $primary {
+      color: #000;
+    } @else {
+      color: $color;
+    }
+  }
+  > svg * {
+    fill: $orange;
+  }
+  &:hover {
+    opacity: 1;
+    background: $color;
+    color: #000;
+    .label {
+      color: #000;
+    }
+    svg * {
+      fill: $orange;
+    }
+  }
+  &.loading {
+    border-color: rgba($color: $color, $alpha: 0);
+    cursor: not-allowed;
+    .iconLoading {
+      svg circle {
+        stroke: $color;
+      }
+    }
+    &:hover {
+      background: transparent !important;
+    }
+  }
+}
+
+// ============================ End Required Core style ============================
+// ============================ Project variable style ================================
+$boxBgColor: rgba(
+  $color: #292d5a,
+  $alpha: 1,
+);
+// ============================ End Project variable style ============================
+// ============================ 2MAU style ============================
+$TM-style-1: #323a67; // Div content
+$TM-style-2: #292d5a; // Div box
+$TM-style-3: #e91e63;
+@mixin TM-title-style {
+  padding: 10px 0 6px 0;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+@mixin TM-label-style {
+  // text-transform: capitalize;
+  margin-bottom: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: 'Pixel Operator HB';
+  line-height: 170%;
+  text-transform: uppercase;
+  /* or 27px */
+  /* White */
+  color: #fff;
+}
+
+.hide {
+  display: none;
+}
+
+$TM-violet: #7b35bb;
+@mixin TM-btnColor($color) {
+  @include btnStyle;
+  background: $color;
+  color: black;
+  transition: 0.25s ease;
+  line-height: 170%;
+  > svg * {
+    fill: $orange;
+  }
+}
+
+$TM-background-main: #292d5a;
+@mixin TM-a {
+  font-weight: 600;
+  color: #fbd5ff;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.download-banner {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  img {
+    width: 70px;
+    margin-left: 10px;
+  }
+  .download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $violet;
+    padding: 10px 5px 10px 15px;
+    color: white;
+    cursor: pointer;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .exits-download-banner {
+    padding-left: 20px;
+    padding-right: 5px;
+    background: $violet;
+    padding: 15px 15px;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.download-banner-ios {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(249 249 249 / 60%);
+  padding-top: 35px;
+  z-index: 999;
+  img {
+    max-height: 600px;
+    max-width: 300px;
+    width: 100%;
+    // margin-left: 10px;
+  }
+  .exits-download-banner-ios {
+    background: $violet;
+    padding: 7px 13px;
+    padding-top: 5px;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%;
+  }
+}
+
+// ============================ End 2MAU style ============================

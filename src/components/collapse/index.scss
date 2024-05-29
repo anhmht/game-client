@@ -1,0 +1,54 @@
+@import "../../module.variables";
+.Collapse {
+  .head {
+    display: flex;
+    .title {
+      padding: 32px 0 21px 0;
+      // font-weight: bold;
+      // font-size: 1.2rem;
+      color: #fff;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 35px;
+    }
+    .btnShowHide {
+      display: none;
+      color: white;
+      width: 1.2rem;
+      margin-bottom: auto;
+      margin-top: auto;
+      margin-left: 20px;
+      cursor: pointer;
+      &.active {
+        transform: rotate(-180deg);
+      }
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+  .boxContent {
+    // padding: 20px;
+    border-radius: 5px;
+    transition: all 0.35s ease !important;
+    max-height: 0;
+    overflow: hidden;
+    &.active {
+      max-height: 9999px;
+    }
+    > * {
+      // background: rgba(0, 0, 0, 0.2);
+      // background-color: $TM-style-2;
+      // padding: 20px;
+    }
+    .ReportChart {
+      // background: rgba(0, 0, 0, 0.2);
+      background-color: #161616;
+      // padding: 20px;
+      padding: 15px 30px 0px 30px;
+    }
+    // > .Table{
+    //     background: transparent;
+    // }
+  }
+}

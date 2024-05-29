@@ -1,0 +1,96 @@
+@import "../../module.variables";
+
+.TreeView {
+  z-index: 99;
+  background: #fff;
+  border-radius: $borderRadius;
+  position: relative;
+
+  .node {
+    cursor: pointer;
+
+    & > rect {
+      box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .node circle {
+    fill: #000000cc;
+    stroke: #000000cc;
+    stroke-width: 1.5px;
+  }
+
+  .node text {
+    font: 10px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+    transition: all 0s;
+  }
+
+  #tab-affiliate-tabpane-tree-view #tree-view {
+    border-top: none !important;
+    margin-top: -10px;
+  }
+
+  #tree-view {
+    border: 2px solid rgba(0, 107, 66, 0.3) !important;
+  }
+
+  #tree-view > svg:first-child {
+    display: block;
+  }
+
+  #tree-view > svg {
+    display: none;
+  }
+
+  #tree {
+    .chart-menu {
+      span {
+        color: #000 !important;
+      }
+    }
+  }
+
+  .showView {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background: rgba($color: #000, $alpha: 0.5);
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    display: flex;
+    padding: 150px 30px;
+    justify-content: center;
+    max-height: 100%;
+    cursor: pointer;
+    #editForm {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      opacity: 1;
+      text-align: center;
+      border: 1px solid #fff;
+      box-shadow: 0px 1px 17px 0px rgba(0, 0, 0, 0.08);
+      min-width: 300px;
+      z-index: 10000;
+      border-radius: 15px;
+      background: #fff;
+      // box-shadow: 0 0 10px 1px #aeaeae;
+    }
+  }
+
+  .hiddenView {
+    display: none;
+  }
+}

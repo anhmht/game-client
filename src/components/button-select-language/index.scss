@@ -1,0 +1,160 @@
+@import "../../module.variables";
+.ButtonSelectLanguage {
+  display: inline-flex;
+  align-items: center;
+  // border: 1px solid $offDark;
+  border-radius: $borderRadius;
+  // background: $dark;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+  &.fixed {
+    position: fixed;
+    top: 40px;
+    right: 15px;
+  }
+  .label {
+    font-size: 0.9em;
+    color: #fff;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: $borderRadius;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    color: #000;
+    position: relative;
+    border: none;
+    .toggleIcon {
+      display: flex;
+      align-items: center;
+      svg * {
+        fill: #9f9f9f;
+      }
+    }
+    .info {
+      display: flex;
+      text-align: left;
+      align-items: center;
+      // flex-direction: column;
+      font-weight: 300;
+      img.flag {
+        height: 16px;
+      }
+      .flag {
+        margin-right: 8px;
+      }
+      .info-label {
+        margin-right: 8px;
+      }
+      .info-indicator {
+        display: flex;
+        svg * {
+          fill: #000;
+        }
+      }
+    }
+    .options {
+      position: absolute;
+      bottom: 100%;
+      right: 0;
+      padding-top: 10px;
+      transform: scaleY(0);
+      transform-origin: 50% 0%;
+      transition: 0.2s ease;
+      .wraper {
+        background: #fff;
+        width: max-content;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        //border: 1px solid $borderColor;
+        // box-shadow: $boxShadow;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+        .item {
+          text-align: left;
+          padding: 10px 15px;
+          .type {
+            margin-bottom: 5px;
+            color: $grey;
+            font-size: 0.8em;
+          }
+          .name {
+            color: #000;
+          }
+          .amount {
+            font-size: 1.2em;
+            font-weight: 600;
+          }
+          &.language {
+            display: flex;
+            align-items: center;
+            img.flag {
+              height: 16px;
+              margin-right: 10px;
+            }
+          }
+          &:hover {
+            .name {
+              color: #000;
+              a {
+                color: #000;
+              }
+            }
+            background-color: #F2F2F2;
+          }
+          &.active {
+            cursor: default;
+            .type,
+            .amount,
+            .name {
+              color: $primary;
+              font-weight: 600;
+            }
+            .amount {
+              &::before {
+                content: "• ";
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &:hover {
+    button {
+      .options {
+        transform: scaleY(1);
+      }
+    }
+    .label {
+      color: $white;
+    }
+  }
+}
+
+.Mobile {
+  .ButtonSelectLanguage {
+    button {
+      padding: 0 12px;
+
+      .info {
+        img.flag {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

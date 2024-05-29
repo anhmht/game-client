@@ -1,0 +1,93 @@
+@import "../../module.variables.scss";
+
+.popup-news {
+  .PopupHomePageWrapper {
+    .popup-container {
+      .popup-wraper {
+        width: 40%;
+        background: #000;
+        // box-shadow: 0 0 8px 2px #f4daaf93;
+        border: 1px solid #f4daaf93;
+        border-radius: 8px;
+        height: fit-content;
+        overflow-y: scroll;
+        max-height: 85vh;
+        touch-action: pan-y;
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .popup--news {
+          padding-bottom: 10px;
+          &__title {
+            text-align: center;
+            font-size: 30px;
+            color: #fff;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            @media only screen and (max-width: $MobileWidthScreen) {
+              font-size: 22px;
+            }
+          }
+          &__subtitle {
+            font-size: 22px;
+            color: #fff;
+            padding: 10px 0 5px 0;
+            @media only screen and (max-width: $MobileWidthScreen) {
+              font-size: 20px;
+            }
+          }
+          &__content {
+            font-size: 15px;
+            line-height: 18px;
+            width: 100%;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 2;
+            // -webkit-box-orient: vertical;
+            overflow: hidden;
+            @media only screen and (max-width: $MobileWidthScreen) {
+              font-size: 14px;
+            }
+            * {
+              color: #fff !important;
+            }
+            h1,
+            h2,
+            h3,
+            h4 {
+              color: #f1eb4e !important;
+              * {
+                color: #f1eb4e !important;
+              }
+            }
+          }
+          &__img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // height: 300px;
+            width: 100%;
+            margin: 10px 0 10px 0;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .popup-news {
+    .PopupHomePageWrapper {
+      .popup-container {
+        .popup-wraper {
+          width: 90%;
+          padding: 20px;
+        }
+      }
+    }
+  }
+}

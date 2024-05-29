@@ -1,0 +1,49 @@
+@import "../../../../../src/module.variables.scss";
+.PageVerifyRegister {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #1f1f1f;
+  width: 558px;
+  padding: 40px 51px;
+  text-align: center;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width: 576px) {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 30px;
+    max-width: 1000px;
+    opacity: 0.02;
+    z-index: 0 !important;
+  }
+  > .icon {
+    svg {
+      height: 80px;
+      * {
+        fill: $success;
+      }
+    }
+    &.error {
+      svg * {
+        fill: $danger;
+      }
+    }
+  }
+  > * {
+    position: relative;
+    z-index: 2;
+  }
+}

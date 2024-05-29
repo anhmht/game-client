@@ -1,0 +1,115 @@
+.select-custom {
+  border: 1px solid #e7e7e7;
+  box-shadow: none;
+  background: #fff;
+  color: #000;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 36px;
+  min-width: 180px;
+  position: relative;
+
+  &_input {
+    height: 36px;
+    padding: 2px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+    span {
+      width: 150px;
+      overflow-x: auto;
+      text-wrap: nowrap;
+    }
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    * {
+      fill: $grey;
+    }
+  }
+
+  &_menu {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: white;
+    border-radius: 4px;
+    padding: 4px 0px;
+    box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 4px 11px hsla(0, 0%, 0%, 0.1);
+
+    .search {
+      margin: 8px 10px;
+      border-radius: 6px;
+      border: 1px solid #f2f2f2;
+      background: #fff;
+      padding: 8px;
+      max-height: 40px;
+      display: flex;
+      align-items: center;
+      .search__icon {
+        padding: 0 8px;
+
+        svg {
+          path {
+            fill: #000000;
+          }
+        }
+      }
+      .search__input {
+        padding-right: 12px;
+        flex: 1;
+        input {
+          padding: 0 0 0 10px;
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 20px;
+          background: transparent;
+          border: none;
+          color: #000;
+          &::placeholder {
+            color: rgba(0, 0, 0, 0.44);
+          }
+        }
+      }
+    }
+
+    .content {
+      max-height: 300px;
+      overflow-y: auto;
+
+      .item {
+        padding: 10px;
+        font-size: 14px;
+        line-height: 20px;
+
+        cursor: pointer;
+
+        .InputCheckbox {
+          margin: 0;
+          .label {
+            color: rgba(0, 0, 0, 0.6) !important;
+          }
+        }
+
+        &.active {
+          .InputCheckbox {
+            .label {
+              color: #000 !important;
+              font-weight: bold !important;
+            }
+          }
+        }
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+}

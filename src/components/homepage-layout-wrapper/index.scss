@@ -1,0 +1,453 @@
+header {
+  position: fixed;
+  top: 0;
+  .header-container {
+    padding: 21px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: transparent;
+    @media (min-width: 576px) {
+      padding: 21px 0;
+    }
+    .ButtonSelectLanguage {
+      // border: 1px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+    .ButtonSelectLanguage button .options {
+      right: 0px;
+    }
+    .ButtonSelectLanguage button {
+      height: 48px;
+      padding: 0 10px 0 15px;
+    }
+    .ButtonSelectLanguage button .options .wraper .item {
+      text-align: left;
+      padding: 10px 29px 10px 15px;
+    }
+    .ButtonSelectLanguage button .info img.flag {
+      height: 30px;
+    }
+    .ButtonSelectLanguage button .info .info-label {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 170%;
+      /* or 27px */
+      text-align: center;
+      color: #ffffff;
+    }
+    .ButtonSelectLanguage button .options .wraper .item.language img.flag {
+      height: 30px;
+      margin-right: 13px;
+    }
+    .ButtonSelectLanguage button .options .wraper .item .name {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 170%;
+      color: #ffffff;
+    }
+    .header-container__left {
+      line-height: normal;
+      .header-container__icon {
+        display: flex;
+        align-items: center;
+        font-size: 34px;
+        font-weight: 700;
+        background: linear-gradient(
+          90deg,
+          rgba(229, 197, 144, 1) 0%,
+          rgba(233, 170, 50, 1) 14%,
+          rgba(241, 198, 89, 1) 28%,
+          rgba(247, 220, 120, 1) 43%,
+          rgba(251, 235, 141, 1) 57%,
+          rgba(254, 245, 155, 1) 71%,
+          rgba(255, 248, 159, 1) 86%,
+          rgba(246, 160, 26, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        // margin-left: 8px;
+        // @media (min-width: 576px) {
+        //     margin-left: 32px;
+        // }
+        // @media (min-width: 768px) {
+        //     margin-left: 64px;
+        // }
+        // @media (min-width: 992px) {
+        //     margin-left: 128px;
+        // }
+        // @media (min-width: 1200px) {
+        //     margin-left: 256px;
+        // }
+        // @media (min-width: 1400px) {
+        //     margin-left: 375px;
+        // }
+        img {
+          cursor: pointer;
+          height: 40px;
+        }
+      }
+    }
+    .header-container__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .header-container__metaniex-logo {
+        margin-right: 40px;
+        img {
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .header-container__account-button {
+        // margin-right: initial;
+        // @media (min-width: 576px) {
+        //     margin-right: 16px;
+        // }
+        // @media (min-width: 768px) {
+        //     margin-right: 32px;
+        // }
+        // @media (min-width: 992px) {
+        //     margin-right: 64px;
+        // }
+        // @media (min-width: 1200px) {
+        //     margin-right: 128px;
+        // }
+        // @media (min-width: 1400px) {
+        //     margin-right: 183px;
+        // }
+        display: flex;
+        .account-button__login {
+          min-width: auto;
+          white-space: nowrap;
+          font-size: 16px;
+          border: 1px solid #fbd66c;
+          color: #fbd266;
+          background: transparent;
+          padding: 15.5px 8px;
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          cursor: pointer;
+          transition: 0.25s;
+          -webkit-transition: 0.25s;
+          -moz-transition: 0.25s;
+          -ms-transition: 0.25s;
+          -o-transition: 0.25s;
+          margin-right: 8px;
+          @media (min-width: 576px) {
+            padding: 15.5px 24px;
+            min-width: 118px;
+            margin-right: 24px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+        .account-button__register {
+          min-width: auto;
+          white-space: nowrap;
+          font-size: 16px;
+          border: none;
+          padding: 15.5px 8px;
+          color: #000;
+          background: linear-gradient(
+            98.43deg,
+            #e6c590 -41.49%,
+            #e9aa32 -34.25%,
+            #f1c659 -21.81%,
+            #f7dc78 -9.49%,
+            #fbeb8d 2.5%,
+            #fef59b 14.06%,
+            #fff89f 24.64%,
+            #f6a01a 101.53%
+          );
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          cursor: pointer;
+          transition: 0.25s;
+          -webkit-transition: 0.25s;
+          -moz-transition: 0.25s;
+          -ms-transition: 0.25s;
+          -o-transition: 0.25s;
+          @media (min-width: 576px) {
+            padding: 15.5px 24px;
+            min-width: 148px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+        .account-button__3rd-login {
+          // margin-right: 32px;
+          min-width: auto;
+          white-space: nowrap;
+          font-size: 16px;
+          border: none;
+          padding: 15.5px 24px;
+          color: #000;
+          background: linear-gradient(
+            98.43deg,
+            #e6c590 -41.49%,
+            #e9aa32 -34.25%,
+            #f1c659 -21.81%,
+            #f7dc78 -9.49%,
+            #fbeb8d 2.5%,
+            #fef59b 14.06%,
+            #fff89f 24.64%,
+            #f6a01a 101.53%
+          );
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          cursor: pointer;
+          transition: 0.25s;
+          -webkit-transition: 0.25s;
+          -moz-transition: 0.25s;
+          -ms-transition: 0.25s;
+          -o-transition: 0.25s;
+          @media (min-width: 576px) {
+            min-width: 148px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+          &:active {
+            transform: scale(1);
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+          }
+        }
+        .account-button__dashboard {
+          // margin-right: 32px;
+          min-width: auto;
+          white-space: nowrap;
+          font-size: 16px;
+          border: none;
+          padding: 15.5px 8px;
+          color: #000;
+          background: linear-gradient(
+            98.43deg,
+            #e6c590 -41.49%,
+            #e9aa32 -34.25%,
+            #f1c659 -21.81%,
+            #f7dc78 -9.49%,
+            #fbeb8d 2.5%,
+            #fef59b 14.06%,
+            #fff89f 24.64%,
+            #f6a01a 101.53%
+          );
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+          cursor: pointer;
+          transition: 0.25s;
+          -webkit-transition: 0.25s;
+          -moz-transition: 0.25s;
+          -ms-transition: 0.25s;
+          -o-transition: 0.25s;
+          @media (min-width: 576px) {
+            padding: 15.5px 24px;
+            min-width: 148px;
+          }
+          &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+        }
+      }
+      // .header-container__language-bar {
+      //     margin-right: initial;
+      //     @media (min-width: 1200px) {
+      //         margin-right: 32px;
+      //     }
+      //     @media (min-width: 1400px) {
+      //         margin-right: 66px;
+      //     }
+      // }
+    }
+  }
+}
+
+footer {
+  .footer-container {
+    background: #f7f9fd;
+    padding-top: 44px;
+    .footer-container__first-section {
+      .container {
+        border-bottom: 1px solid #dee1e9;
+        padding-bottom: 32px;
+        @media (min-width: 992px) {
+          padding-bottom: 100px;
+        }
+        .main-tab {
+          margin-top: 0;
+          @media (min-width: 768px) {
+            margin-top: 48px;
+          }
+          .main-tab__title {
+            margin-bottom: 16px;
+            text-align: center;
+            @media (min-width: 768px) {
+              margin-bottom: 32px;
+            }
+            @media (min-width: 992px) {
+              text-align: initial;
+            }
+            cursor: pointer;
+            img {
+              height: 54px;
+            }
+          }
+          .main-tab__description {
+            font-size: 18px;
+            color: #343434;
+            margin-bottom: 48px;
+            text-align: center;
+            @media (min-width: 992px) {
+              text-align: initial;
+            }
+          }
+          .main-tab__social-link {
+            display: flex;
+            justify-content: center;
+            @media (min-width: 992px) {
+              justify-content: initial;
+            }
+            .social-link__instagram {
+              margin-right: 32px;
+            }
+            .social-link__linkedin {
+              margin-right: 32px;
+            }
+            .social-link__facebook {
+              margin-right: 32px;
+            }
+            .social-link__twitter {
+            }
+          }
+        }
+        .about-us-tab {
+          margin-top: 48px;
+          padding-left: initial;
+          @media (min-width: 992px) {
+            padding-left: 88px;
+          }
+          .about-us-tab__title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #343434;
+            margin-top: 8px;
+            margin-bottom: 47px;
+          }
+          .about-us-tab__description1 {
+            font-size: 18px;
+            color: #6f6f70;
+            margin-bottom: 18px;
+          }
+          .about-us-tab__description2 {
+            font-size: 18px;
+            color: #6f6f70;
+            margin-bottom: 18px;
+          }
+          .about-us-tab__description3 {
+            font-size: 18px;
+            color: #6f6f70;
+            margin-bottom: 18px;
+          }
+          .about-us-tab__description4 {
+            font-size: 18px;
+            color: #6f6f70;
+          }
+        }
+        .contact-info-tab {
+          margin-top: 48px;
+          .contact-info-tab__title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #343434;
+            margin-top: 8px;
+            margin-bottom: 24px;
+            text-align: center;
+            @media (min-width: 992px) {
+              text-align: initial;
+            }
+          }
+          .contact-info-tab__items {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            @media (min-width: 992px) {
+              width: initial;
+              margin-left: initial;
+              margin-right: initial;
+            }
+            .item {
+              display: flex;
+              margin-bottom: 16px;
+              align-items: center;
+              .item__icon {
+                margin-right: 12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+              .item__label {
+                font-size: 18px;
+                color: #343434;
+              }
+            }
+          }
+        }
+      }
+    }
+    .footer-container__second-section {
+      color: #000;
+      padding-top: 48px;
+      padding-bottom: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.Mobile {
+  header .header-container .header-container__right {
+    zoom: 0.9;
+  }
+  .header-container__metaniex-logo {
+    margin-right: 12px !important;
+    img {
+      height: 52px;
+    }
+  }
+}

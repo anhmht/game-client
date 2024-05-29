@@ -1,0 +1,43 @@
+@import '../../module.variables';
+
+.Image {
+	display: inline-block;
+	
+	&.error {
+		background: $grey;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 15px;
+
+		p {
+			margin-left: 5px;
+		}
+
+		.icon {
+			svg {
+				height: 14px;
+
+				* {
+					fill: $dark;
+				}
+			}
+		}
+	}
+
+	.avatar {
+		&.error {
+			p {
+				display: none;
+			}
+
+			svg * {
+				fill: $danger;
+			}
+		}
+	}
+
+	&.isLoaded {
+		background: unset;
+	}
+}

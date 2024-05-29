@@ -1,0 +1,64 @@
+.withdrawal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000000;
+    backdrop-filter: blur(8px);
+    .withdrawal-modal {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        padding: 24px 12px;
+        width: 100%;
+        background: #1F1F1F;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: max-content;
+        max-width: calc(100% - 24px);
+        max-height: 80vh;
+        @media (min-width: 768px) {
+            max-width: 560px;
+            padding: 40px;
+        }
+        .withdrawal-modal__close-indicator {
+            position: absolute;
+            top: 24px;
+            right: 12px;
+            cursor: pointer;
+            @media (min-width: 768px) {
+                top: 40px;
+                right: 24px;
+            }
+            svg {
+                width: 24px;
+                height: 24px;
+                * {
+                    fill: #D2D2D2;
+                }
+            }
+            &:hover {
+                svg {
+                    * {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+        .withdrawal-modal__header-title {
+            font-size: 20px;
+            font-family: 'Press Start 2P';
+            text-align: center;
+            margin-bottom: 24px;
+            line-height: 36px;
+        }
+        .withdraw-form {
+            overflow: auto;
+            padding: 0 12px;
+        }
+    }
+}

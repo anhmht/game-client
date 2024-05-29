@@ -1,0 +1,167 @@
+@import "./form-request/";
+
+.claim {
+  padding: 30px 40px;
+
+  @media (max-width: 768px) {
+    padding: 12px;
+  }
+
+  &-banner {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: linear-gradient(93deg, rgba(252, 239, 194, 0.47) 1.79%, rgba(252, 239, 194, 0) 91.71%);
+    backdrop-filter: blur(20px);
+    padding: 10px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (max-width: 768px) {
+      padding: 10px 16px;
+    }
+
+    &_title {
+      color: #000;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28.275px;
+
+      @media (max-width: 1024px) {
+        margin-bottom: 6px;
+      }
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .request-claim-popup.PopupWraper {
+    .box {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 80vh;
+      top: initial;
+      transform: initial;
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: fit-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: max-content;
+        border-radius: 12px;
+      }
+      .boxTitle {
+        padding: 12px 16px;
+        @media (min-width: 768px) {
+          padding: 12px 32px;
+        }
+      }
+      .content {
+        padding: 16px;
+        height: calc(100% - 44px);
+        max-height: initial;
+        @media (min-width: 768px) {
+          padding: 16px 32px;
+          height: initial;
+          max-height: 85vh;
+        }
+        .claim-button {
+          display: flex;
+          margin-right: auto;
+          margin-left: auto;
+          @media (min-width: 768px) {
+            display: inline-flex;
+            margin-right: initial;
+            margin-left: initial;
+          }
+        }
+      }
+    }
+  }
+    
+
+  .Table.order-table {
+    .Table__Body {
+      tr {
+        td[data-header="Result"], td[data-header="Kết quả"], td[data-header="결과"], td[data-header="ရလဒ်"] {
+          align-items: flex-end;
+          text-align: right;
+          @media (min-width: 768px) {
+              align-items: left;
+              text-align: left;
+          }
+        }
+        td[data-header="Amount"], td[data-header="Số lượng"], td[data-header="양"], td[data-header="ပမာဏ"] {
+          align-items: flex-end;
+          text-align: right;
+          @media (min-width: 768px) {
+              align-items: left;
+              text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .Table.request-list-table {
+    .Table__Body {
+      tr {
+        td[data-header="Status"], td[data-header="Trạng thái"], td[data-header="상태"], td[data-header="အဆင့်အတန်း"] {
+          align-items: flex-end;
+          text-align: right;
+          @media (min-width: 768px) {
+              align-items: left;
+              text-align: left;
+          }
+        }
+        td[data-header="Package Price"], td[data-header="Giá gói"], td[data-header="패키지 가격"], td[data-header="Package ဈေးနှုန်း"] {
+          align-items: flex-end;
+          text-align: right;
+          @media (min-width: 768px) {
+              align-items: left;
+              text-align: left;
+          }
+        }
+        .proof-image-1 {
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            @media (min-width: 768px) {
+              width: initial;
+              height: initial;
+              border-radius: initial;
+              background: initial;
+              object-fit: initial;
+            }
+          }
+        }
+        .proof-image-2 {
+          img {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            background: rgba(0, 0, 0, 0.1);
+            object-fit: contain;
+            @media (min-width: 768px) {
+              width: initial;
+              height: initial;
+              border-radius: initial;
+              background: initial;
+              object-fit: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+}

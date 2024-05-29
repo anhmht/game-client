@@ -1,0 +1,69 @@
+@import "../../module.variables.scss";
+
+.Message {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 15px;
+	width: 100%;
+
+	.content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.1em;
+		font-weight: 300;
+		color: $grey;
+
+		> * {
+			margin: 5px;
+		}
+	}
+
+	&.loading {
+		.content {
+			> svg {
+				height: 20px;
+				width: 20px;
+			}
+		}
+	}
+
+	&.info,
+	&.error,
+	&.emptyData {
+		.content {
+			> svg {
+				height: 20px;
+
+				* {
+					fill: $grey;
+				}
+			}
+		}
+	}
+
+	&.info {
+		.content {
+			color: $info;
+
+			> svg {
+				* {
+					fill: $info;
+				}
+			}
+		}
+	}
+
+	&.error {
+		.content {
+			color: $danger;
+
+			> svg {
+				* {
+					fill: $danger;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+@import "./nav/";
+@import "./footer/";
+
+.new-wrapper {
+  overflow: hidden;
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .new-wrapper {
+    overflow: visible;
+  }
+}

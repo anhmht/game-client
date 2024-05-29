@@ -1,0 +1,32 @@
+.accordion {
+  &-item {
+    margin-bottom: 24px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: transparent !important;
+
+    .accordion-title {
+      cursor: pointer;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.3s ease-in-out;
+      color: rgba(255, 255, 255, 0.8);
+      font-family: Roboto Condensed;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      .accordion-icon {
+        font-size: 10px;
+      }
+    }
+
+    .accordion-content {
+      padding: 10px;
+    }
+  }
+}

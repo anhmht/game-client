@@ -1,0 +1,24 @@
+.assets {
+    .Table {
+        .Table__Body {
+            .status {
+                align-items: end;
+                @media (min-width: 768px) {
+                    text-align: initial;
+                }
+            }
+            .amount {
+                text-align: right;
+                @media (min-width: 768px) {
+                    text-align: left;
+                }
+            }
+            .balance {
+                text-align: right;
+                @media (min-width: 768px) {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}

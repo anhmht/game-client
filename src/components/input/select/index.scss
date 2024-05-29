@@ -1,0 +1,105 @@
+@import "../../../module.variables.scss";
+
+.InputSelect {
+  width: 100%;
+  min-width: 180px;
+
+  .InputSelect__control {
+    border: 1px solid #e7e7e7 !important;
+    box-shadow: none !important;
+    height: 12px;
+    background: #fff;
+    color: #000 !important;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .InputSelect__placeholder {
+    color: rgba(0, 0, 0, 0.44);
+  }
+
+  .InputSelect__indicator-separator {
+    background: $grey;
+    display: none;
+  }
+
+  .InputSelect__indicator {
+    svg {
+      width: 16px;
+      height: 16px;
+      * {
+        fill: $grey;
+      }
+    }
+  }
+
+  .InputSelect__indicators {
+    // padding: 15px;
+    div {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .InputSelect__single-value {
+    color: #000;
+  }
+
+  .InputSelect__input {
+    input {
+      color: #000 !important;
+    }
+
+    // background: #102963;
+  }
+
+  .InputSelect__menu {
+    z-index: 10;
+    background: white;
+    border-radius: 4px;
+    font-size: 14px !important;
+
+    .InputSelect__menu-list {
+      background: white;
+      // background: white;\
+      border-radius: 4px;
+
+      .InputSelect__option {
+        cursor: pointer;
+        padding: 10px;
+        background: white;
+        overflow-x: hidden;
+        color: black;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.1);
+        }
+      }
+    }
+  }
+
+  .InputSelect__option--is-selected {
+    background: $primary;
+    color: #000000 !important;
+    font-weight: 600;
+    cursor: default;
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &.InputSelect--is-disabled {
+    background: inherit;
+
+    .InputSelect__control {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+// .register {
+//     .InputSelect .InputSelect__indicators {
+//         padding: 15px;
+//     }
+// }

@@ -1,0 +1,59 @@
+.verify-withdrawal-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .indicator-back {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: 0.25s;
+        @media (min-width: 768px) {
+            margin-bottom: 52px;
+        }
+        &:hover {
+            filter: brightness(0.75);
+            -webkit-filter: brightness(0.75);
+        }
+        .indicator-back__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            svg {
+                width: 18px;
+                height: 18px;
+                * {
+                    fill: #fff;
+                }
+            }
+        }
+        .indicator-back__label {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .verify-withdrawal {
+        border-radius: 12px;
+        padding: 24px 60px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background: #1f1f1f;
+        .verify-withdrawal__icon {
+            margin-bottom: 16px;
+        }
+        .verify-withdrawal__title {
+            font-size: 24px;
+            font-weight: 500;
+            color: #fff;
+            margin-bottom: 24px;
+        }
+        .verify-withdrawal__main-button {
+        }
+    }
+}

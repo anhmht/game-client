@@ -1,0 +1,93 @@
+@import '../../../module.variables.scss';
+
+.actionPlus{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5px;
+}
+.amount-box{
+    position: absolute;
+    left: 20px;
+    font-weight: bold;
+    color: $text;
+}
+.Desktop {
+    .ActionsPanel {
+        .input{
+            // height: 50px;
+            border-radius: 5px !important;
+            background: #2b304d;
+            border: none !important;
+            input{
+                margin-top: 15px;
+                color: $text !important;
+            }
+            padding-top: 7px;
+            font-size: 14px;
+        }
+    }
+}
+
+.Mobile {
+    .ActionsPanel {
+        .input{
+            // height: 50px;
+            border-radius: 5px !important;
+            background: #2b304d;
+            border: none !important;
+            display: block;
+            input{
+                color: $text !important;
+                border: none;
+                text-align: center;
+                width: 100%;
+            }
+            font-size: 16px;
+        }
+    }
+}
+
+
+.btnInputNumberPlus {
+    height: 1px;
+    font-size: 20px;
+
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $orange;
+    margin-top: 12px;
+    padding-bottom: 7px;
+
+    svg {
+        height: 10px;
+        width: 10px;
+        * {
+            fill: $orange;
+        }
+    }
+}
+.space{
+    height: 18px;
+}
+.btnInputNumberMinus {
+    height: 1px;
+    // font-size: 34px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 2px;
+    color: $orange;
+    svg {
+        height: 10px;
+        width: 10px;
+
+        * {
+            fill: $orange;
+        }
+    }
+}

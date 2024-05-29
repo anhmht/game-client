@@ -1,0 +1,353 @@
+@import "@/src/module.variables";
+@import "./component";
+.deposit-page {
+    padding: 16px;
+    @media (min-width: 768px) {
+        padding: 24px 40px;
+    }
+    .deposit-container {
+        border-radius: 8px;
+        .indicator-back {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            cursor: pointer;
+            transition: 0.25s;
+            &:hover {
+                filter: brightness(0.75);
+                -webkit-filter: brightness(0.75);
+            }
+            .indicator-back__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    * {
+                        fill: rgba(0, 0, 0, 0.8);
+                    }
+                }
+            }
+            .indicator-back__label {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+        .method {
+            .method__item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px 24px;
+                border-radius: 12px;
+                transition: 0.25s;
+                border: 1px solid #E7E7E7;
+                cursor: pointer;
+                &:hover {
+                    background: $primary;
+                    border: 1px solid #081131;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+                &.active {
+                    background: $primary;
+                }
+                .method__item__active {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 8px;
+                    border: 1px solid #202020;
+                    border-radius: 50%;
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        * {
+                            fill: $blue;
+                        }
+                    }
+                }
+                .method__item__left {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    .method__item__icon {
+                        margin-right: 16px;
+                        padding: 8px;
+                        border-radius: 6px;
+                        background: #F2F2F2;
+                        .method__item__icon__img {
+                            height: 40px;
+                        }
+                    }
+                    .method__item__info {
+                        overflow: hidden;
+                        flex: 1;
+                        .method__item__info__title {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-bottom: 6px;
+                        }
+                        .method__item__info__description {
+                            overflow: hidden;
+                            font-size: 14px;
+                            opacity: 0.6;
+                            line-height: normal;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .method__item__right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .deposit-colume-2 {
+            display: flex;
+            flex-direction: column;
+            .currency {
+                margin-bottom: 24px;
+                z-index: 2;
+                .currentcy-select {
+                    .currentcy-select__control {
+                        height: 48px;
+                        border: 1px solid #E7E7E7;
+                        .currentcy-select__value-container {
+                            height: 100%;
+                            .currentcy-select__single-value {
+                                height: 100%;
+                                .currency__container {
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    .currency__icon {
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 8px;
+                                        padding: 8px 4px;
+                                        .currency__icon__img {
+                                            height: 26px;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                    .currency__label {
+            
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .currentcy-select__menu {
+                        .currency__container {
+                            display: flex;
+                            align-items: center;
+                            .currency__icon {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 8px;
+                                padding: 8px 4px;
+                                .currency__icon__img {
+                                    height: 26px;
+                                    border-radius: 4px;
+                                }
+                            }
+                            .currency__label {
+                                color: #000;
+                            }
+                        }
+                        .currentcy-select__option--is-selected {
+                            .currency__container {
+                                .currency__label {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .method-input {
+                height: 100%;
+                .method-entry {
+                    border-radius: 4px;
+                    .bank-title {
+                        font-weight: 500;
+                        margin-bottom: 8px;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    .bank-list {
+                        border: 1px solid #E7E7E7;
+                        border-radius: 4px;
+                        padding: 12px;
+                        margin-bottom: 24px;
+                        .bank-list__item {
+                            position: relative;
+                            margin-top: 7.5px;
+                            margin-bottom: 7.5px;
+                            transition: 0.25s;
+                            -webkit-transition: 0.25s;
+                            -moz-transition: 0.25s;
+                            -ms-transition: 0.25s;
+                            -o-transition: 0.25s;
+                            cursor: pointer;
+                            &:hover {
+                                filter: brightness(0.8);
+                                -webkit-filter: brightness(0.8);
+                            }
+                            &.active {
+                                .bank-list__item__img {
+                                    filter: brightness(0.8);
+                                    -webkit-filter: brightness(0.8);
+                                }
+                            }
+                            .bank-list__item__active {
+                                position: absolute;
+                                right: -8px;
+                                top: -8px;
+                                border-radius: 50%;
+                                background: #fff;
+                                z-index: 1;
+                                border: 1px solid #fff;
+                                box-shadow: 0 0 16px 1px #000;
+                                svg {
+                                    width: 24px;
+                                    height: 24px;
+                                    * {
+                                        fill: $blue;
+                                    }
+                                }
+                            }
+                            .bank-list__item__img {
+                                background: #fff;
+                                border-radius: 4px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .e-wallet {
+                        .e-wallet__banner {
+                            display: flex;
+                            justify-content: center;
+                            padding: 40px 0;
+                            .e-wallet__banner__img {
+                                width: 200px;
+                                border-radius: 16px;
+                                box-shadow: 0 0 24px 1px rgba(0, 0, 0, 0.75);
+                            }
+                        }
+                    }
+                    .form-input {
+                        .form-input__selected {
+                            margin-bottom: 20px;
+                            .form-input__selected__label {
+                                font-size: 16px;
+                                color: #fff;
+                                margin-bottom: 8px;
+                            }
+                            .form-input__selected__value {
+                                display: flex;
+                                .form-input__selected__value__icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    .form-input__selected__value__icon__img {
+                                        height: 64px;
+                                        background: #fff;
+                                        border-radius: 4px;
+                                    }
+                                }
+                                .form-input__selected__value__label {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    color: #fff;
+                                    .form-input__selected__value__label__primary {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .form-input__selected__value--no-bank {
+                                    font-style: italic;
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        .form-input__main {
+                            margin-bottom: 24px;
+                            .estimated-received {
+                                display: flex;
+                                justify-content: flex-end;
+                            }
+                            .payment-range {
+                                color: #303133;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .usdt-container {
+                        .network {
+                            margin-bottom: 20px;
+                            .label {
+                                margin-bottom: 4px;
+                            }
+                        }
+                        .walletAddress {
+                            .label {
+                                margin-bottom: 4px;
+                            }
+                            .value {
+                                display: -moz-box;
+                                display: flex;
+                                -moz-box-align: center;
+                                align-items: center;
+                                color: #fff;
+                                height: 40px;
+                                background: #283066;
+                                padding: 6px 10px;
+                                border-radius: 10px;
+                                box-sizing: initial;
+                                cursor: pointer;
+                                -moz-box-pack: justify;
+                                justify-content: space-between;
+                                p {
+                                    margin: 0;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+                                .icon {
+                                    display: -moz-box;
+                                    display: flex;
+                                    -moz-box-align: center;
+                                    align-items: center;
+                                    -moz-box-pack: center;
+                                    justify-content: center;
+                                    margin-left: 10px;
+                                    svg {
+                                        height: 15px;
+                                        * {
+                                            fill: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

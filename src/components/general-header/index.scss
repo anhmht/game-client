@@ -1,0 +1,241 @@
+.general-header {
+    position: absolute;
+    width: 1920px;
+    height: 101px;
+    left: 0px;
+    top: 0px;
+    background: rgba(124, 148, 0, 0.8);
+    z-index: 1000;
+    @media (min-width: 769px) {
+        top: 0;
+        padding: 20px 100px;
+    }
+    &.general-header--scrolled {
+        box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+    }
+    .general-header__main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .general-header__main__logo {
+            display: block;
+            cursor: pointer;
+            @media (max-width: 769px) {
+                margin-right: 24px;
+                text-align: center;
+                flex: 1;
+            }
+        }
+        .general-header__main__menu {
+            flex: 1;
+            display: none;
+            @media (min-width: 769px) {
+                display: block;
+            }
+            .general-header__main__menu__swiper {
+                width: 100%;
+                .swiper-wrapper {
+                    justify-content: center;
+                    .swiper-slide {
+                        width: auto;
+                        .general-header__main__menu__wrap-item {
+                            text-decoration: none;
+                            .general-header__main__menu__item {
+                                font-style: normal;
+                                font-weight: 800;
+                                font-size: 25px;
+                                line-height: 30px;
+                                display: flex;
+                                align-items: center;
+                                padding: 14px 16px;
+                                transition: 0.25s;
+                                border-bottom: 2px solid transparent;
+                                color: #fff;
+                                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                                font-size: 20px;
+                                white-space: nowrap;
+                                cursor: pointer;
+                                &:hover {
+                                    color: #f3c759;
+                                }
+                                &.active {
+                                    border-bottom: 2px solid #000;
+                                    color: #f3c759;
+                                }
+                            }
+                            &.active {
+                                .general-header__main__menu__item {
+                                    color: #fccb25 !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .general-header__main__auth__btn {
+            .Button {}
+        }
+        .general-header__main__auth {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                .general-header__main__auth__dropdown {
+                    display: block;
+                }
+            }
+            .general-header__main__auth__avatar {
+                margin-right: 12px;
+                .general-header__main__auth__avatar__img {
+                    height: 40px;
+                    @media (min-width: 768px) {
+                        height: 50px;
+                    }
+                }
+            }
+            .general-header__main__auth__info {
+                .general-header__main__auth__info__name {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 4px;
+                    .general-header__main__auth__info__name__text {
+                        font-size: 20px;
+                        margin-right: 6px;
+                        color: #ffd91d;
+                        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                    }
+                    .general-header__main__auth__info__name__indicator {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                .general-header__main__auth__info__balance {
+                    display: flex;
+                    align-items: center;
+                    .general-header__main__auth__info__balance__icon {
+                        margin-right: 6px;
+                    }
+                    .general-header__main__auth__info__balance__value {
+                        color: #fccb25;
+                    }
+                }
+            }
+            .general-header__main__auth__dropdown {
+                position: relative;
+                display: none;
+                position: absolute;
+                top: calc(100% + 8px);
+                right: 0;
+                background: #1f1f1f;
+                border-radius: 12px;
+                padding: 20px;
+                width: 100%;
+                min-width: 150px;
+                z-index: 1;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    right: 0;
+                    width: 100%;
+                    height: calc(100% + 8px);
+                    z-index: -1;
+                }
+                .general-header__main__auth__dropdown__user {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 12px;
+                    .general-header__main__auth__dropdown__user__avatar {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 12px;
+                    }
+                    .general-header__main__auth__dropdown__user__info {
+                        .general-header__main__auth__dropdown__user__info__wallet {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 4px;
+                            .general-header__main__auth__dropdown__user__info__wallet__value {
+                                margin-right: 6px;
+                            }
+                            .general-header__main__auth__dropdown__user__info__wallet__icon {}
+                        }
+                        .general-header__main__auth__dropdown__user__info__balance {
+                            color: #fccb25;
+                            font-size: 20px;
+                        }
+                    }
+                }
+                .general-header__main__auth__dropdown__funds {
+                    text-align: end;
+                    margin-bottom: 16px;
+                    .general-header__main__auth__dropdown__funds__deposit {
+                        background: url("/assets/images/cyan-button-background.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        width: 70px;
+                        height: 24px;
+                        font-size: 12px;
+                        margin-right: 6px;
+                    }
+                    .general-header__main__auth__dropdown__funds__withdrawal {
+                        background: url("/assets/images/cyan-button-background.png");
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        width: 70px;
+                        height: 24px;
+                        font-size: 12px;
+                    }
+                }
+                .general-header__main__auth__dropdown__logout {
+                    display: flex;
+                    align-items: center;
+                    .general-header__main__auth__dropdown__logout__icon {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 16px;
+                        svg {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                    &:hover {
+                        svg {
+                            path {
+                                fill: #f3c759;
+                            }
+                        }
+                        .general-header__main__auth__dropdown__logout__label {
+                            color: #f3c759;
+                        }
+                    }
+                }
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                right: 0;
+                height: 30px;
+            }
+        }
+        .general-header__menu-mobile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 16px;
+            @media (min-width: 769px) {
+                display: none;
+            }
+        }
+    }
+}

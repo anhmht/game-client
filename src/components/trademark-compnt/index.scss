@@ -1,0 +1,13 @@
+.trademark-compnt {
+    background: #900be4;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @media (min-width: 768px) {
+        padding: 16px 100px;
+    }
+    .trademark-compnt__item {
+        margin: 8px 12px;
+    }
+}

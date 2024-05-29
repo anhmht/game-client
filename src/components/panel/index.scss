@@ -1,0 +1,10 @@
+@import "../../module.variables";
+$padding: 33px;
+$borderRadius: 8px;
+$padding: 33px;
+
+.d-panel {
+  background-color: $dark60;
+  padding: 0 $padding;
+  border-radius: $borderRadius;
+}

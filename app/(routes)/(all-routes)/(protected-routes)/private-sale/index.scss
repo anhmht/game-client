@@ -1,0 +1,421 @@
+.private-sale-page {
+  padding: 0 12px 12px 12px;
+  @media (min-width: 768px) {
+    padding: 0 100px 24px 100px;
+  }
+  .private-sale__info {
+    background: #2c1c36;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 12px;
+    @media (min-width: 768px) {
+      padding: 20px 32px;
+    }
+    .private-sale__info__main-title {
+      font-size: 16px;
+      font-family: "Press Start 2P";
+      margin-bottom: 12px;
+      line-height: 36px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+    }
+    .private-sale__info__content {
+      background: #3d274b;
+      padding: 12px 20px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      .private-sale__info__content__time {
+        display: flex;
+        align-items: start;
+        font-size: 20px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #564362;
+        line-height: 28px;
+        flex-direction: column;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          align-items: center;
+        }
+        .private-sale__info__content__time__label {
+          margin-right: 8px;
+        }
+        .private-sale__info__content__time__value {
+          display: flex;
+          align-items: center;
+          .private-sale__info__content__time__value__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+          }
+          .private-sale__info__content__time__value__text {
+            color: #ffd91d;
+          }
+        }
+      }
+      .private-sale__info__content__info {
+        margin-top: 8px;
+        .private-sale__info__content__info__item {
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+          @media (min-width: 768px) {
+            &:not(:last-child) {
+              margin-bottom: 0;
+            }
+          }
+          .private-sale__info__content__info__item__label {
+            color: rgba(#fff, 0.6);
+            margin-bottom: 2px;
+            line-height: 20px;
+          }
+          .private-sale__info__content__info__item__value {
+            font-size: 20px;
+            line-height: 22px;
+          }
+          &.private-sale__info__content__info__item__status {
+            .private-sale__info__content__info__item__value {
+              padding: 2px 12px;
+              border-radius: 100px;
+              display: inline;
+            }
+            &.private-sale__info__content__info__item__status--ready {
+              .private-sale__info__content__info__item__value {
+                background: #E8B714;
+                color: #fff;
+              }
+            }
+            &.private-sale__info__content__info__item__status--sold_out {
+              .private-sale__info__content__info__item__value {
+                background: #B8B8B8;
+                color: #fff;
+              }
+            }
+            &.private-sale__info__content__info__item__status--expired {
+              .private-sale__info__content__info__item__value {
+                background: #EB423A;
+                color: #fff;
+              }
+            }
+            &.private-sale__info__content__info__item__status--comming_soon {
+              .private-sale__info__content__info__item__value {
+                background: #01a3ff;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .private-sale__info__button {
+      text-align: center;
+      margin-bottom: 16px;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+      .private-sale__info__button__buy-now {
+        margin-right: 0;
+        background: url("/assets/images/cyan-button-background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        @media (min-width: 768px) {
+          margin-right: 12px;
+        }
+      }
+    }
+    .private-sale__info__all-info {
+      .private-sale__info__all-info__title {
+        display: flex;
+        align-items: center;
+        .private-sale__info__all-info__title__icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 8px;
+        }
+        .private-sale__info__all-info__title__text {
+          font-size: 16px;
+        }
+      }
+      .private-sale__info__all-info__table {
+        .Table {
+          overflow-x: auto;
+          table {
+            border: 1px solid #303030;
+            .Table__Header {
+              border-bottom: 1px solid rgba(48, 48, 48, 0.5);
+              tr {
+                th {
+                  border: 1px solid #303030;
+                  padding: 8px 16px;
+                  line-height: 18px;
+                  text-align: center;
+                  background: #291437;
+                  font-family: 'Pixel Operator';
+                  font-size: 14px;
+                  font-weight: 700;
+                  display: table-cell;
+                  white-space: nowrap;
+                }
+              }
+            }
+            .Table__Body {
+              tr {
+                td {
+                  border: 1px solid #303030;
+                  padding: 8px 16px;
+                  line-height: 18px;
+                  text-align: center;
+                  font-family: 'Pixel Operator';
+                  font-size: 20px;
+                  font-weight: 400;
+                  display: table-cell;
+                  white-space: nowrap;
+                }
+              }
+              .private-sale__info__all-info__table__status {
+                  padding: 2px 12px;
+                  border-radius: 100px;
+                &.private-sale__info__all-info__table__status--ready {
+                  background: #E8B714;
+                  color: #fff;
+                }
+                &.private-sale__info__all-info__table__status--sold_out {
+                  background: #B8B8B8;
+                  color: #fff;
+                }
+                &.private-sale__info__all-info__table__status--expired {
+                  background: #EB423A;
+                  color: #fff;
+                }
+                &.private-sale__info__all-info__table__status--comming_soon {
+                  background: #01a3ff;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .Table {
+    .title {
+      .total-sub-title {
+        margin-left: 0;
+        display: inline-flex;
+        align-items: center;
+        @media (min-width: 768px) {
+          margin-left: 40px;
+        }
+      }
+    }
+    .Table__FilterBox {
+      flex-direction: column;
+      @media (min-width: 768px) {
+        flex-direction: row;
+      }
+      .total-sub-title {
+        display: flex;
+        align-items: center;
+        font-family: "Press Start 2P";
+        font-weight: 400;
+        margin-top: 12px;
+        font-size: 12px;
+        @media (min-width: 768px) {
+          margin-top: 19px;
+          font-size: 16px;
+        }
+      }
+    }
+    .Table__Body {
+      .time {
+        text-align: right;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+      .address {
+        text-align: right;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+      .status {
+        text-align: right;
+        border-radius: 24px;
+        color: #000;
+        white-space: nowrap;
+        align-items: end;
+        @media (min-width: 768px) {
+          text-align: left;
+          align-items: initial;
+        }
+        &.status--sent {
+          background: rgba(#01a3ff, 1);
+          color: #fff;
+          border: 1px solid rgba(#01a3ff, 1);
+        }
+        &.status--accepted {
+          background: rgba(#0cba69, 1);
+          color: #fff;
+          border: 1px solid rgba(#0cba69, 1);
+        }
+        &.status--rejected {
+          background: rgba(#fd5353, 1);
+          color: #fff;
+          border: 1px solid rgba(#fd5353, 1);
+        }
+        &.status--pending {
+          background: rgba(#fbc217, 1);
+          color: #fff;
+          border: 1px solid rgba(#fbc217, 1);
+        }
+      }
+      .txhash {
+        text-align: right;
+        @media (min-width: 768px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .buy-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    backdrop-filter: blur(8px);
+    .buy-modal {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      padding: 24px 12px;
+      width: 100%;
+      background: #1f1f1f;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: max-content;
+      max-width: calc(100% - 24px);
+      max-height: 80vh;
+      @media (min-width: 768px) {
+        max-width: 560px;
+        padding: 40px;
+    }
+      .buy-modal__close-indicator {
+        position: absolute;
+        top: 24px;
+        right: 12px;
+        cursor: pointer;
+        @media (min-width: 768px) {
+            top: 40px;
+            right: 24px;
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+          * {
+            fill: #d2d2d2;
+          }
+        }
+        &:hover {
+          svg {
+            * {
+              fill: #fff;
+            }
+          }
+        }
+      }
+      .buy-modal__header-title {
+        font-size: 20px;
+        font-family: "Press Start 2P";
+        text-align: center;
+        margin-bottom: 24px;
+        line-height: 36px;
+      }
+      .private-sale-form {
+        overflow: auto;
+        padding: 0 12px;
+        .private-sale-form__price {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+        }
+        .private-sale-form__address-warning {
+          color: #f3c759;
+          font-size: 16px;
+          font-family: "Pixel Operator";
+          margin-bottom: 20px;
+        }
+        .private-sale-form__amount {
+          #amount {
+            .fill-max {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: #ffc815;
+              font-size: 14px;
+              padding: 12px;
+              cursor: pointer;
+            }
+          }
+        }
+        .private-sale-form__extra {
+          font-size: 16px;
+          font-family: "Pixel Operator";
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+        }
+        .private-sale-form__actual-receive {
+          margin-bottom: 24px;
+          .private-sale-form__actual-receive__label {
+            font-family: "Pixel Operator HB";
+            margin-bottom: 4px;
+          }
+          .private-sale-form__actual-receive__input {
+            display: flex;
+            align-items: center;
+            background: #303030;
+            border-radius: 4px;
+            .private-sale-form__actual-receive__input__prefix {
+              display: flex;
+              align-items: center;
+              padding: 15px 12px;
+              border-right: 1px solid #373737;
+              .private-sale-form__actual-receive__input__prefix__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 4px;
+              }
+            }
+            .private-sale-form__actual-receive__input__main {
+              padding: 15px 12px;
+            }
+          }
+        }
+        .private-sale-form__indicator-button {
+          margin-bottom: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .private-sale-form__indicator-button__buy {
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}

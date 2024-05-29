@@ -1,0 +1,85 @@
+.personal-information-page {
+    padding: 12px 16px;
+    @media (min-width: 576px) {
+        padding: 24px 40px;
+    }
+    .personal-information__header {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.8);
+        @media (min-width: 768px) {
+            margin-bottom: 24px;
+        }
+    }
+    .personal-information__body {
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .personal-information__body__title {
+            font-size: 20px;
+            font-weight: 500;
+            padding: 16px 32px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        .personal-information__body__content {
+            padding: 16px;
+            @media (min-width: 576px) {
+                padding: 32px;
+            }
+            .personal__info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                @media (min-width: 576px) {
+                    flex-direction: initial;
+                    align-items: center;
+                }
+                .personal__info__avatar {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0;
+                    margin-bottom: 24px;
+                    @media (min-width: 576px) {
+                        margin-right: 40px;
+                        margin-bottom: 0;
+                    }
+                    img {
+                        border-radius: 50%;
+                        width: 80px;
+                        height: 80px;
+                        object-fit: contain;
+                        object-position: center center;
+                    }
+                    .personal__info__avatar__edit {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 6px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        background: #fff;
+                        border-radius: 50%;
+                        box-shadow: 0 0 4px 0 #000;
+                        cursor: pointer;
+                    }
+                }
+                .personal__info__input {
+                    flex: 1;
+                    padding-right: 0;
+                    @media (min-width: 576px) {
+                        padding-right: 80px;
+                    }
+                }
+                .personal__info__main-button {
+                    text-align: center;
+                    @media (min-width: 576px) {
+                        text-align: initial;
+                    }
+                }
+            }
+        }
+    }
+}

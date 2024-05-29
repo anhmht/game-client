@@ -1,0 +1,39 @@
+stages:
+  - deploy development
+  - deploy production
+deploy_dev_stage:
+  stage: deploy development
+  environment:
+    name: development
+  only:
+    - develop
+  when:
+    manual
+  tags:
+    - development
+  variables:
+    IMAGE: ${CI_REGISTRY_IMAGE}:${CI_ENVIRONMENT_NAME}
+    STACK_SERVICE: ${DOCK_STACK_FRONTEND}_${CI_PROJECT_NAME}
+    # IMAGE: bzo/bzo-client:latest
+    # STACK_SERVICE: bzo-frontend_bzo-client
+  script:
+    - chmod u+x ./deploy/build.sh && ./deploy/build.sh
+    - chmod u+x ./deploy/run.sh && ./deploy/run.sh
+    - rm -rf .git && rm -rf *
+deploy_prod_stage:
+  stage: deploy production
+  environment:
+    name: production
+  only:
+    - tags
+  when:
+    manual
+  tags:
+    - production-frontend
+  variables:
+    IMAGE: ${CI_REGISTRY_IMAGE}:${CI_ENVIRONMENT_NAME}
+    STACK_SERVICE: ${DOCK_STACK_FRONTEND}_${CI_PROJECT_NAME}
+  script:
+    - chmod u+x ./deploy/build.sh && ./deploy/build.sh
+    - chmod u+x ./deploy/run.sh && ./deploy/run.sh
+    - rm -rf .git && rm -rf *

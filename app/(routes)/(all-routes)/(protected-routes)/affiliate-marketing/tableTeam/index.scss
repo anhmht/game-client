@@ -1,0 +1,31 @@
+.aff {
+  .aff-overview {
+    .Table {
+      .Table__Body {
+        tr {
+          td {
+            .vip-img {
+              border-radius: 50%;
+              width: 40px;
+              height: 40px;
+              object-fit: contain;
+              object-position: center center;
+            }
+          }
+          .register {
+            text-align: right;
+            @media (min-width: 768px) {
+              text-align: left;
+            }
+          }
+          .level {
+            text-align: right;
+            @media (min-width: 768px) {
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}

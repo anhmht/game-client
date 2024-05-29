@@ -1,0 +1,38 @@
+.referral-levels {
+  .banner {
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #1c1c1c;
+    backdrop-filter: blur(20px);
+    padding: 54px 0;
+    text-align: center;
+
+    h6 {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    h5 {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 40px;
+    }
+  }
+  .Table__Body {
+    .amount {
+      text-align: right;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+    .level {
+      text-align: right;
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+}

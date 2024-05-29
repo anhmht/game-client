@@ -1,0 +1,159 @@
+.deposit-status-detail-page {
+    padding: 16px 12px;
+    border-radius: 10px;
+    @media (min-width: 768px) {
+        padding: 24px 40px;
+    }
+    .indicator-back {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: 0.25s;
+        @media (min-width: 768px) {
+            margin-bottom: 52px;
+        }
+        &:hover {
+            filter: brightness(0.75);
+            -webkit-filter: brightness(0.75);
+        }
+        .indicator-back__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 8px;
+            svg {
+                width: 18px;
+                height: 18px;
+                * {
+                    fill: rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+        .indicator-back__label {
+            color: rgba(0, 0, 0, 0.8);
+            font-size: 20px;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+    .page-loading {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .deposit-status-detail-container {
+        border-radius: 12px;
+        border: 1px solid #E0E0E0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: normal;
+        padding: 24px 16px;
+        @media (min-width: 768px) {
+            padding: 24px 40px;
+        }
+        .deposit-status-detail__icon {
+            margin-bottom: 8px;
+            svg {
+                width: 64px;
+                height: 64px;
+                // * {
+                //     fill: #F44336;
+                // }
+            }
+            &.deposit-status-detail__icon--success {
+                // svg * {
+                //     fill: #0DA200;
+                // }
+            }
+            &.deposit-status-detail__icon--failed {
+                // svg * {
+                //     fill: #F44336;
+                // }
+            }
+        }
+        .deposit-status-detail__primary-title {
+            font-size: 26px;
+            font-weight: 500;
+            color: #4A4A4A;
+            margin-bottom: 4px;
+            // &.deposit-status-detail__primary-title--success {
+            //     color: #0DA200;
+            // }
+            // &.deposit-status-detail__primary-title--failed {
+            //     color: #F44336;
+            // }
+        }
+        .deposit-status-detail__secondary-title {
+            font-size: 14px;
+            color: #4A4A4A;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            width: 100%;
+            padding-bottom: 24px;
+            text-align: center;
+            margin-bottom: 24px;
+            // &.deposit-status-detail__secondary-title--success {
+            //     color: #0DA200;
+            // }
+            // &.deposit-status-detail__secondary-title--failed {
+            //     color: #F44336;
+            // }
+        }
+        .deposit-status-detail__break-line {
+            width: 10%;
+            margin-bottom: 40px;
+            &.deposit-status-detail__break-line--success {
+                border: 1px solid #0DA200;
+            }
+            &.deposit-status-detail__break-line--failed {
+                border: 1px solid #F44336;
+            }
+        }
+        .deposit-status-detail__body-title {
+            width: 100%;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+        .deposit-status-detail__form {
+            margin-bottom: 24px;
+            width: 100%;
+            .deposit-status-detail__form-item {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0;
+                border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+                // &:not(:last-child) {
+                //     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+                // }
+                &:first-child {
+                    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+                }
+                &:last-child {
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+                .deposit-status-detail__form-item__label {
+                    font-size: 14px;
+                    color: rgba(0, 0, 0, 0.6)
+                }
+                .deposit-status-detail__form-item__value {
+                    word-break: break-all;
+                    text-align: right;
+                    font-weight: 700;
+                }
+                &.deposit-status-detail__payment-total {
+                    .deposit-status-detail__form-item__value {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

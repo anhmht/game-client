@@ -1,0 +1,258 @@
+@import "../../module.variables.scss";
+.Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  background: none;
+  font-size: 20px;
+  font-weight: 400;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  // overflow: hidden;
+  box-sizing: border-box;
+  color: #fff;
+  text-transform: uppercase;
+  height: 40px;
+  // width: 100%;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.05);
+
+    .btn-bg {
+      svg {
+        .btn-color_1 {
+          fill: #bf9400;
+        }
+        .btn-color_2 {
+          fill: #fccb25;
+        }
+        .btn-color_3 {
+          fill: #ecbb15;
+        }
+        .btn-color_4 {
+          fill: #ffd64d;
+        }
+        .btn-color_5 {
+          fill: #ffe691;
+        }
+        .btn-color_6 {
+          fill: #ffd443;
+        }
+      }
+
+      &:after {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  svg {
+    width: 124px;
+    @media (min-width: 768px) {
+      width: 150px;
+    }
+  }
+
+  .content-btn {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    span.label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+    span.label {
+      color: #8c8c8c;
+    }
+
+    svg {
+      .btn-color_1 {
+        fill: #8c8c8c !important;
+      }
+      .btn-color_2 {
+        fill: #b8b8b8 !important;
+      }
+      .btn-color_3 {
+        fill: #9b9b9b !important;
+      }
+      .btn-color_4 {
+        fill: #c8c8c8 !important;
+      }
+      .btn-color_5 {
+        fill: #dedede !important;
+      }
+      .btn-color_6 {
+        fill: #d1d1d1 !important;
+      }
+    }
+  }
+
+  &.primary {
+    svg {
+      .btn-color_1 {
+        fill: #0096c4;
+      }
+      .btn-color_2 {
+        fill: #1dcfff;
+      }
+      .btn-color_3 {
+        fill: #1bbdec;
+      }
+      .btn-color_4 {
+        fill: #31d8ff;
+      }
+      .btn-color_5 {
+        fill: #64e2ff;
+      }
+      .btn-color_6 {
+        fill: #9ff1ff;
+      }
+    }
+  }
+
+  &.secondary {
+    svg {
+      .btn-color_1 {
+        fill: #6400a4;
+      }
+      .btn-color_2 {
+        fill: #9c00ff;
+      }
+      .btn-color_3 {
+        fill: #8a00e1;
+      }
+      .btn-color_4 {
+        fill: #a218fa;
+      }
+      .btn-color_5 {
+        fill: #be57ff;
+      }
+      .btn-color_6 {
+        fill: #cc7bff;
+      }
+    }
+  }
+
+  &.rejected {
+    svg {
+      .btn-color_1 {
+        fill: #dc0808;
+      }
+      .btn-color_2 {
+        fill: #fe2222;
+      }
+      .btn-color_3 {
+        fill: #f01313;
+      }
+      .btn-color_4 {
+        fill: #ff4c4c;
+      }
+      .btn-color_5 {
+        fill: #ff7676;
+      }
+      .btn-color_6 {
+        fill: #ff5d5d;
+      }
+    }
+  }
+
+  // &.dark {
+  //   @include btnDarkColor($dark);
+  // }
+  // &.danger {
+  //   @include btnDarkColor($danger);
+  // }
+  // &.warning {
+  //   @include btnDarkColor($warning);
+  // }
+  // &.success {
+  //   @include btnDarkColor($success);
+  // }
+  // &.info {
+  //   @include btnDarkColor($info);
+  // }
+  // &.grey {
+  //   @include btnDarkColor($grey);
+  // }
+  // &.primary {
+  //   @include TM-btnColor($primary);
+  // }
+  // &.dark-outline {
+  //   @include btnOutlineColor($dark);
+  // }
+  // &.grey-outline {
+  //   @include btnOutlineColor($grey);
+  // }
+  // &.warning-outline {
+  //   @include btnOutlineColor($warning);
+  // }
+  // &.danger-outline {
+  //   @include btnOutlineColor($danger);
+  // }
+  // &.success-outline {
+  //   @include btnOutlineColor($success);
+  // }
+  // &.info-outline {
+  //   @include btnOutlineColor($info);
+  // }
+  // &.primary-outline {
+  //   @include btnOutlineColor($primary);
+  // }
+  .iconLoading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($color: $white, $alpha: 0);
+    svg {
+      height: 18px;
+      circle {
+        stroke: $white;
+        fill: transparent !important;
+      }
+    }
+  }
+
+  &.loading {
+    cursor: not-allowed;
+    span.label {
+      opacity: 0.5;
+    }
+    > svg {
+      opacity: 0;
+    }
+    &:hover {
+      pointer-events: none;
+    }
+  }
+}
+
+.Button_Wraper_Middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mobile {
+  .Button {
+    // width: 100%;
+  }
+}

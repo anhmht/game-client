@@ -1,0 +1,274 @@
+.overview {
+  &-banner {
+    background-image: url("../../../../../public/assets/images/overviewBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    padding: 32px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      padding: 32px 20px;
+      display: block;
+    }
+    @media (max-width: 425px) {
+      display: none;
+      padding: 32px 16px;
+    }
+    &_left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      @media (max-width: 768px) {
+        margin-bottom: 20px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+          object-position: center center;
+        }
+      }
+      .content {
+        display: flex;
+        align-items: center;
+        gap: 74px;
+        @media (max-width: 1024px) {
+          gap: 50px;
+        }
+        .item {
+          p {
+            color: rgb(0, 0, 0, 0.6);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            margin: 0;
+          }
+          span {
+            color: rgb(0, 0, 0, 0.8);
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: lowercase;
+            &::first-letter {
+              text-transform: capitalize;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-banner_mobile {
+    display: none;
+    min-height: 235px;
+    background-image: url("../../../../../public/assets/images/overviewBannerMobi.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    @media (max-width: 425px) {
+      display: block;
+      padding: 14px 16px;
+    }
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      img {
+        border-radius: 50%;
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    p {
+      margin: 0;
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+    }
+    span {
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+    }
+    .animation-img {
+      padding-bottom: 10px !important;
+    }
+  }
+  &-content {
+    padding: 24px 40px;
+    @media (max-width: 768px) {
+      padding: 24px 20px;
+    }
+    @media (max-width: 425px) {
+      padding: 16px;
+    }
+    &_info {
+      align-items: center;
+      margin-bottom: 40px;
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+      }
+      .item {
+        padding-right: 80px;
+        margin-right: 16px;
+        min-width: 180px;
+        @media (max-width: 1024px) {
+          padding-right: 20px;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 16px;
+        }
+        p {
+          color: rgba(0, 0, 0, 0.6);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px;
+          margin: 0;
+          @media (max-width: 425px) {
+            font-size: 16px;
+          }
+        }
+        span {
+          color: rgba(0, 0, 0, 0.8);
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 34px;
+          @media (max-width: 425px) {
+            font-size: 24px;
+          }
+        }
+        &.item-border {
+          position: relative;
+          &:after {
+            content: "";
+            height: 40px;
+            width: 1px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.4;
+            background: #bababa;
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &_chart {
+      border-radius: 12px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: #fff;
+      padding: 30px 16px;
+      margin-bottom: 0;
+      margin-top: 16px;
+      @media (max-width: 425px) {
+        margin-bottom: 30px;
+      }
+      .filter {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 90px;
+        @media (max-width: 1024px) {
+          display: block;
+          margin-bottom: 40px;
+        }
+        .tabs {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          overflow: auto;
+          &::-webkit-scrollbar {
+            width: 0 !important;
+            height: 0 !important;
+          }
+          @media (max-width: 1024px) {
+            margin-bottom: 20px;
+          }
+          .tab {
+            padding: 8px 16px;
+            border-radius: 100px;
+            border: 1px solid #f6f6f6;
+            background: #fff;
+            color: #000;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+            transition: all 0.25s;
+            cursor: pointer;
+            &:hover,
+            &.active {
+              color: #fff;
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              background: #000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .animation-img {
+    animation: flash 1s infinite;
+    padding-bottom: 20px;
+  }
+  .Table {
+    .Table__Body {
+      td[data-header="Status"],
+      td[data-header="Trạng thái"],
+      td[data-header="상태"],
+      td[data-header="အဆင့်အတန်း"] {
+        align-items: flex-end;
+        text-align: right;
+        @media (min-width: 768px) {
+          align-items: left;
+          text-align: left;
+        }
+      }
+      td[data-header="Amount"],
+      td[data-header="Số lượng"],
+      td[data-header="양"],
+      td[data-header="ပမာဏ"] {
+        align-items: flex-end;
+        text-align: right;
+        @media (min-width: 768px) {
+          align-items: left;
+          text-align: left;
+        }
+      }
+      td[data-header="Balance"],
+      td[data-header="Số dư"],
+      td[data-header="균형"],
+      td[data-header="လက်ကျန်"] {
+        align-items: flex-end;
+        text-align: right;
+        @media (min-width: 768px) {
+          align-items: left;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,354 @@
+.App {
+  .InputWraper {
+    > .label {
+      color: $white;
+    }
+    > .description {
+      color: $white;
+      font-size: 1em;
+    }
+    > .wraper {
+      > .input {
+        input,
+        .btnInputNumberClear {
+          color: $white;
+          background: #262626;
+        }
+      }
+    }
+    &.disabled {
+      > .wraper {
+        .input {
+          border-color: #0e0e0e !important;
+          background: rgba(13, 13, 13, 0.5) !important;
+          input {
+            color: $white;
+            opacity: 0.6;
+          }
+          &:after {
+            cursor: default;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #0e0e0e, $alpha: 0.1);
+            border-radius: $borderRadius;
+          }
+        }
+      }
+    }
+  }
+  // ============================ Table style ================================
+  .Table {
+    min-height: 150px;
+    table {
+      border-collapse: unset;
+      border-spacing: 0px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      thead {
+        // transform: translateY(-8px);
+        // background: $table-background-color;
+        // -webkit-transform: translateY(-8px);
+        // -moz-transform: translateY(-8px);
+        // -ms-transform: translateY(-8px);
+        // -o-transform: translateY(-8px);
+        border-radius: 8px 8px 0 0;
+        -webkit-border-radius: 8px 8px 0 0;
+        -moz-border-radius: 8px 8px 0 0;
+        -ms-border-radius: 8px 8px 0 0;
+        -o-border-radius: 8px 8px 0 0;
+        tr {
+          // border-bottom: 1px solid $offDark;
+        }
+      }
+      tbody {
+        // background: $table-background-color;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        // border-bottom: 1px solid $offDark;
+      }
+      tfoot {
+        background: $table-background-color;
+        transform: translateY(2px);
+        tr:last-child {
+          td {
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+          }
+        }
+      }
+      td {
+        color: $white;
+        font-size: 14px;
+      }
+    }
+    .Message {
+      background: transparent !important;
+      box-shadow: none;
+      border-radius: 0;
+    }
+    .fetching {
+      background: transparent !important;
+      border-radius: 0;
+      svg.spinner {
+        circle {
+          stroke: $white;
+        }
+      }
+    }
+    &.highLightHeader {
+      thead th {
+        color: $primary;
+      }
+    }
+    &.Custom {
+      .Table__FilterBox {
+        // background: $table-background-color;
+        border: unset;
+        transition: 0.3s max-height, 0.4s padding, 0.3s opacity;
+        //max-height: 200px;
+        opacity: 1;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        &.hideFilter {
+          overflow: hidden;
+          max-height: 0px;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          opacity: 0;
+        }
+      }
+      .Table__FilterBox,
+      thead,
+      tbody,
+      tfoot {
+        // background-color: $boxBgColor;
+      }
+      table thead th:first-child {
+        // border-radius: $borderRadius 0 0 $borderRadius;
+      }
+      table thead th:last-child {
+        // border-radius: 0 $borderRadius $borderRadius 0;
+      }
+      tfoot td {
+        // border-radius: $borderRadius;
+      }
+      thead th {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+      }
+      .Footer {
+        padding: 0;
+      }
+      .fakeLine {
+        padding: 0;
+        border-bottom: 1px solid #242750;
+      }
+      .footerPadding {
+        display: table-cell;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    }
+    &.textCenter {
+      @media (max-width: 768px) {
+        .scroll {
+          max-width: 100%;
+          overflow: auto;
+          table {
+            min-width: 100vh;
+          }
+          th {
+            font-size: 16px;
+          }
+          td {
+            font-size: 14px;
+          }
+        }
+      }
+
+      // @media (min-width: 768px) {
+      //   display: table-cell;
+      //   justify-content: initial;
+      //   width: initial;
+      //   &::before {
+      //     content: initial;
+      //   }
+      // }
+      // }
+    }
+    .pagination {
+      margin-bottom: 0;
+      list-style-type: none;
+      display: flex;
+      .pageNumber {
+        width: 30px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+        &:hover,
+        &.active {
+          color: #fff;
+        }
+      }
+    }
+    &.otherType {
+      .Table__Head {
+        th {
+          &:last-child {
+            // border-left: 4px solid #222b45;
+            // border-top-left-radius: 14px !important;
+            // border-bottom-left-radius: 14px !important;
+          }
+          &:nth-last-child(2) {
+            // border-top-right-radius: 10px !important;
+            // border-bottom-right-radius: 10px !important;
+          }
+        }
+      }
+      .Table__Body {
+        tr {
+          &:last-child {
+            // td:nth-last-child(2) {
+            //     border-bottom-right-radius: 10px !important;
+            // }
+            td:last-child {
+              // border-left: 4px solid #222b45;
+              // border-bottom-left-radius: 14px !important;
+            }
+          }
+          &:first-child {
+            td:nth-last-child(2) {
+              // border-top-right-radius: 10px !important;
+            }
+            td:last-child {
+              // border-left: 4px solid #222b45;
+              // border-top-left-radius: 14px !important;
+            }
+          }
+          &:not(:last-child):not(:first-child) {
+            td:last-child {
+              // border-left: 4px solid #222b45;
+            }
+          }
+        }
+      }
+    }
+  }
+  .TableTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    .title {
+      color: $white;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .btnFilter {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      background: #161616;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      .btnFilter__label {
+        font-size: 16px;
+        color: #fff;
+        margin-right: 24px;
+      }
+      .btnFilter__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      svg {
+        * {
+          fill: #fff;
+        }
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  // &.Mobile {
+  //   .Table__Body {
+  //     tr {
+  //       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  //       display: block;
+  //       &:last-child {
+  //         border: none;
+  //       }
+  //     }
+  //   }
+  // }
+  // ============================ End Table style ============================
+  // ============================ Alert style ================================
+  &.Mobile {
+    .Alert {
+      padding: 0;
+      max-width: 100%;
+      width: calc(100% - 30px);
+      left: 50%;
+      .Alert__Item {
+        margin-top: 15px;
+        .icon {
+          width: max-content;
+          padding: 10px;
+          svg {
+            height: 25px;
+          }
+        }
+        .content {
+          padding: 10px 0;
+          // padding-right: 15px;
+          .title {
+            font-size: 1em;
+            font-weight: 700;
+            margin-bottom: 0;
+          }
+          .message {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+  // ============================ End Alert style ============================
+  // ============================ Button style ================================
+  .Button {
+    &.offDark-outline {
+      @include btnOutlineColor($offDark);
+    }
+    &.grey-outline {
+      @include btnOutlineColor($grey);
+    }
+  }
+  // ============================ End Button style ============================
+  // ============================ Message style ================================
+  .Mobile {
+    .Message {
+      .content {
+        word-break: break-word;
+      }
+    }
+  }
+  // ============================ End Message style ============================
+}

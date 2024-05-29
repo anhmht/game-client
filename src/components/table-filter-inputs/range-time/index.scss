@@ -1,0 +1,208 @@
+@import "../../../module.variables.scss";
+.InputDateTime {
+  display: inline-flex;
+  &.fullWidth {
+    width: 100%;
+    .react-datetime-picker__wrapper {
+      width: 100%;
+    }
+  }
+  .react-datetime-picker__calendar {
+    z-index: 100;
+  }
+  .react-datetime-picker__inputGroup__input:invalid {
+    background: none !important;
+    color: $danger !important;
+    &::placeholder {
+      color: $danger !important;
+    }
+  }
+  .react-datetime-picker__clear-button,
+  .react-datetime-picker__calendar-button {
+    svg {
+      * {
+        stroke: $grey !important;
+      }
+    }
+  }
+  .react-datetime-picker__wrapper {
+    // height: $inputHeight !important;
+    height: 40px !important;
+    border: none;
+    flex-direction: row-reverse;
+    .react-datetime-picker__inputGroup {
+      // padding: 0 7px;
+      input,
+      .react-datetime-picker__inputGroup__leadingZero {
+        outline: none;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+      }
+    }
+    button {
+      padding: 4px;
+      outline: none;
+      &.react-datetime-picker__calendar-button {
+        padding: 4px 4px 4px 12px;
+      }
+      svg {
+        max-height: 16px;
+        * {
+          stroke: $dark;
+        }
+      }
+    }
+  }
+  .react-datetime-picker__inputGroup__amPm {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    option {
+      color: #000;
+    }
+  }
+  .InputDateTimeCalendar {
+    border-radius: $borderRadius;
+    color: $dark;
+    user-select: none;
+    @include borderBox;
+    box-shadow: $boxShadow;
+    .react-calendar__navigation {
+      border-bottom: 1px solid rgba($color: $dark, $alpha: 0.08);
+      button {
+        text-transform: capitalize;
+        font-size: 1em;
+        &:hover {
+          background: rgba($color: $dark, $alpha: 0.08);
+        }
+      }
+    }
+    .react-calendar__navigation__label {
+      font-weight: 400;
+      color: $dark;
+      font-size: 1em;
+    }
+    .react-calendar__month-view {
+      button {
+        text-transform: capitalize;
+        font-size: 1em;
+        font-weight: 400;
+        border: 1px solid rgba($color: $grey, $alpha: 0);
+        &:enabled:hover {
+          border: 1px solid $primary;
+          background: none;
+        }
+        &:disabled {
+          background: none !important;
+        }
+      }
+      .react-calendar__month-view__days__day--weekend {
+        color: $danger;
+      }
+      .react-calendar__month-view__days__day--neighboringMonth {
+        background: rgba($color: $primary, $alpha: 0.05);
+        color: $grey;
+      }
+      .react-calendar__tile--active {
+        background: $primary !important;
+        color: $white !important;
+        cursor: default !important;
+        &:hover {
+          background: $primary !important;
+          color: $white !important;
+        }
+      }
+      .react-calendar__tile {
+        &.react-calendar__tile--now {
+          color: $primary;
+          &:enabled:hover {
+            border: 1px solid $primary;
+            background: none;
+          }
+        }
+      }
+    }
+  }
+  &.react-datetime-picker--disabled {
+    background: none;
+    overflow: hidden;
+    cursor: default;
+    .react-datetime-picker__wrapper {
+      border-color: rgba($color: $dark, $alpha: 0);
+    }
+  }
+}
+
+.InputDateTimeRange {
+  .CpnInput:first-child {
+    margin-right: 10px;
+  }
+  .input {
+    background: #141414;
+    border-radius: 4px;
+    border: 1px solid #303030;
+    // margin-bottom: 5px;
+    display: inline-flex;
+    align-items: center;
+    //flex-direction: column;
+    -webkit-border-radius: $borderRadius;
+    -moz-border-radius: $borderRadius;
+    -ms-border-radius: $borderRadius;
+    -o-border-radius: $borderRadius;
+    width: 100%;
+    position: relative;
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+    @media (min-width: 576px) {
+      width: initial;
+      position: initial;
+    }
+    &:first-child {
+      margin-right: initial;
+      @media (min-width: 576px) {
+        margin-right: 8px;
+      }
+    }
+    .label {
+      font-size: 0.9em;
+      color: $grey;
+      flex: 1;
+      position: absolute;
+      top: 0;
+      padding: 0 0 0 8px;
+      @media (min-width: 370px) {
+        position: initial;
+        top: initial;
+        padding: 0 0 0 16px;
+      }
+      @media (min-width: 576px) {
+        position: initial;
+        top: initial;
+        padding: 0 0 0 16px;
+      }
+    }
+    .InputDateTime {
+      .react-datetime-picker__inputGroup {
+        input {
+          color: #000;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 18px;
+        }
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .separation {
+    display: none;
+    @media (min-width: 768px) {
+      display: inline;
+    }
+  }
+}

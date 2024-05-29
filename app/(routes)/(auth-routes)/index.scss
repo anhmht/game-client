@@ -1,0 +1,36 @@
+@import "./signin";
+@import "./forgot-password/";
+@import "./reset-password/[code]/";
+@import "./reset-password/[code]/";
+@import "./signup/";
+@import "./verify-register/[code]/";
+
+.auth-page {
+  background-color: #900be4;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .auth-bg {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("../../../public/assets/images/bg-auth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    overflow: auto;
+  }
+}

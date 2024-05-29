@@ -1,0 +1,531 @@
+@import "@/src/module.variables";
+@import "./component";
+.withdraw-page {
+    padding: 16px;
+    @media (min-width: 768px) {
+        padding: 24px 40px;
+    }
+    .withdraw-container {
+        border-radius: 8px;
+        .indicator-back {
+            display: flex;
+            align-items: center;
+            margin-bottom: 24px;
+            cursor: pointer;
+            transition: 0.25s;
+            &:hover {
+                filter: brightness(0.75);
+                -webkit-filter: brightness(0.75);
+            }
+            .indicator-back__icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 8px;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    * {
+                        fill: rgba(0, 0, 0, 0.8);
+                    }
+                }
+            }
+            .indicator-back__label {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 20px;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+        .toggle-send-email {
+            margin-bottom: 24px;
+            .InputToggleSwitch {
+                display: flex;
+                align-items: center;
+                .label {
+                    order: 2;
+                    margin-bottom: 0;
+                }
+                .switch {
+                    align-self: flex-start;
+                    margin-right: 12px;
+                    order: 1;
+                    width: 48px;
+                    height: 22px;
+                    .slider::before {
+                        height: 16px;
+                        width: 16px;
+                    }
+                    input:checked + .slider:before {
+                        transform: translateX(16px);
+                    }
+                }
+            }
+        }
+        .method {
+            .method__item {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 16px 24px;
+                border-radius: 12px;
+                transition: 0.25s;
+                border: 1px solid #e7e7e7;
+                cursor: pointer;
+                &:hover {
+                    background: $primary;
+                    border: 1px solid #081131;
+                }
+                &:not(:last-child) {
+                    margin-bottom: 8px;
+                }
+                &.active {
+                    background: $primary;
+                }
+                .method__item__active {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    margin: 8px;
+                    border: 1px solid #202020;
+                    border-radius: 50%;
+                    svg {
+                        width: 24px;
+                        height: 24px;
+                        * {
+                            fill: $blue;
+                        }
+                    }
+                }
+                .method__item__left {
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    .method__item__icon {
+                        margin-right: 16px;
+                        padding: 8px;
+                        border-radius: 6px;
+                        background: #f2f2f2;
+                        .method__item__icon__img {
+                            height: 40px;
+                        }
+                    }
+                    .method__item__info {
+                        overflow: hidden;
+                        flex: 1;
+                        .method__item__info__title {
+                            font-size: 16px;
+                            font-weight: 500;
+                            line-height: normal;
+                            margin-bottom: 6px;
+                        }
+                        .method__item__info__description {
+                            overflow: hidden;
+                            font-size: 14px;
+                            opacity: 0.6;
+                            line-height: normal;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+                .method__item__right {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .withdraw-colume-2 {
+            display: flex;
+            flex-direction: column;
+            .currency {
+                margin-bottom: 24px;
+                z-index: 2;
+                .currentcy-select {
+                    .currentcy-select__control {
+                        height: 48px;
+                        border: 1px solid #e7e7e7;
+                        .currentcy-select__value-container {
+                            height: 100%;
+                            .currentcy-select__single-value {
+                                height: 100%;
+                                .currency__container {
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    .currency__icon {
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 8px;
+                                        padding: 8px 4px;
+                                        .currency__icon__img {
+                                            height: 26px;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                    .currency__label {
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .currentcy-select__menu {
+                        .currency__container {
+                            display: flex;
+                            align-items: center;
+                            .currency__icon {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 8px;
+                                padding: 8px 4px;
+                                .currency__icon__img {
+                                    height: 26px;
+                                    border-radius: 4px;
+                                }
+                            }
+                            .currency__label {
+                                color: #000;
+                            }
+                        }
+                        .currentcy-select__option--is-selected {
+                            .currency__container {
+                                .currency__label {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .method-input {
+                height: 100%;
+                .bank-title {
+                    font-weight: 500;
+                    margin-bottom: 8px;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                .method-entry {
+                    border-radius: 4px;
+                    .bank-list {
+                        border: 1px solid #e7e7e7;
+                        border-radius: 4px;
+                        padding: 12px;
+                        margin-bottom: 24px;
+                        .bank-list__item {
+                            position: relative;
+                            margin-top: 7.5px;
+                            margin-bottom: 7.5px;
+                            transition: 0.25s;
+                            -webkit-transition: 0.25s;
+                            -moz-transition: 0.25s;
+                            -ms-transition: 0.25s;
+                            -o-transition: 0.25s;
+                            cursor: pointer;
+                            &:hover {
+                                filter: brightness(0.8);
+                                -webkit-filter: brightness(0.8);
+                            }
+                            &.active {
+                                .bank-list__item__img {
+                                    filter: brightness(0.8);
+                                    -webkit-filter: brightness(0.8);
+                                }
+                            }
+                            .bank-list__item__active {
+                                position: absolute;
+                                right: -8px;
+                                top: -8px;
+                                border-radius: 50%;
+                                background: #fff;
+                                z-index: 1;
+                                border: 1px solid #fff;
+                                box-shadow: 0 0 16px 1px #000;
+                                svg {
+                                    width: 24px;
+                                    height: 24px;
+                                    * {
+                                        fill: $blue;
+                                    }
+                                }
+                            }
+                            .bank-list__item__img {
+                                background: #fff;
+                                border-radius: 4px;
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .form-input {
+                        .form-input__selected {
+                            margin-bottom: 20px;
+                            .form-input__selected__label {
+                                font-size: 16px;
+                                color: #fff;
+                                margin-bottom: 8px;
+                            }
+                            .form-input__selected__value {
+                                display: flex;
+                                .form-input__selected__value__icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 8px;
+                                    .form-input__selected__value__icon__img {
+                                        height: 64px;
+                                        background: #fff;
+                                        border-radius: 4px;
+                                    }
+                                }
+                                .form-input__selected__value__label {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    color: #fff;
+                                    .form-input__selected__value__label__primary {
+                                        font-size: 16px;
+                                        font-weight: 700;
+                                    }
+                                }
+                                .form-input__selected__value--no-bank {
+                                    font-style: italic;
+                                    color: $primary;
+                                }
+                            }
+                        }
+                        .form-input__balance-enquiry {
+                            font-size: 16px;
+                            color: #fff;
+                        }
+                        .form-input__main {
+                            .fill-max {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                color: #0057FF;
+                                font-size: 14px;
+                                padding: 12px;
+                                cursor: pointer;
+                            }
+                            .extra-info {
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                flex-wrap: wrap;
+                                margin-bottom: 20px;
+                                .extra-info__available-balance {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 14px;
+                                    .extra-info__available-balance__label {
+                                    }
+                                    .extra-info__available-balance__value {
+                                        font-weight: 700;
+                                    }
+                                }
+                                .extra-info__payment-range {
+                                    font-size: 14px;
+                                }
+                                .extra-info__estimated-received {
+                                    display: flex;
+                                    justify-content: flex-end;
+                                }
+                                .extra-info__withdraw-fee {
+                                }
+                            }
+                        }
+                    }
+                    .usdt-container {
+                        .WithdrawForm {
+                            .network {
+                                margin-bottom: 20px;
+                            }
+                            .walletAddress {
+                                .value {
+                                    display: -moz-box;
+                                    display: flex;
+                                    -moz-box-align: center;
+                                    align-items: center;
+                                    color: #fff;
+                                    height: 44px;
+                                    background: rgba(255, 255, 255, 0.1);
+                                    padding: 10px;
+                                    border-radius: 5px;
+                                    cursor: pointer;
+                                    -moz-box-pack: justify;
+                                    justify-content: space-between;
+                                    p {
+                                        margin: 0;
+                                    }
+                                    .icon {
+                                        display: -moz-box;
+                                        display: flex;
+                                        -moz-box-align: center;
+                                        align-items: center;
+                                        -moz-box-pack: center;
+                                        justify-content: center;
+                                        margin-left: 10px;
+                                        svg {
+                                            height: 15px;
+                                        }
+                                    }
+                                }
+                            }
+                            #amount {
+                                .fill-max {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 0 8px;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .PopupWraper {
+        background: rgba(0, 0, 0, 0.9);
+        .box {
+            background: #fff;
+            width: 95%;
+            @media (min-width: 768px) {
+                width: 30%;
+            }
+            .content {
+                padding: 16px 32px 40px;
+                .verify-method-body {
+                    .control-input {
+                        .verify-method-select {
+                            margin-bottom: 24px;
+                            .verify-method-select__control {
+                                height: 48px;
+                                .verify-method-select__single-value {
+                                    .verify-method__container {
+                                        display: flex;
+                                        align-items: center;
+                                        .verify-method__icon {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            margin-right: 8px;
+                                            .verify-method__icon__img {
+                                                height: 28px;
+                                            }
+                                        }
+                                        .verify-method__label {
+                                        }
+                                    }
+                                }
+                            }
+                            .verify-method-select__menu {
+                                .verify-method__container {
+                                    display: flex;
+                                    align-items: center;
+                                    .verify-method__icon {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-right: 8px;
+                                        padding: 8px 4px;
+                                        .verify-method__icon__img {
+                                            height: 26px;
+                                            border-radius: 4px;
+                                        }
+                                    }
+                                    .verify-method__label {
+                                        color: #000;
+                                    }
+                                }
+                                .verify-method-select__option--is-selected {
+                                    .verify-method__container {
+                                        .verify-method__icon {
+                                            background: #fff;
+                                            border-radius: 50%;
+                                            padding: 4px;
+                                        }
+                                        .verify-method__label {
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .control-input__item {
+                            display: flex;
+                            align-items: center;
+                            border-radius: 12px;
+                            margin-bottom: 8px;
+                            border: 1px solid #E7E7E7;
+                            padding: 16px 24px;
+                            cursor: pointer;
+                            transition: 0.25s;
+                            &:last-child {
+                                margin-bottom: 16px;
+                            }
+                            &.active {
+                                border: 1px solid #081131;
+                                background: $primary;
+                                pointer-events: none;
+                                .control-input__item__bubble { 
+                                    border: 1px solid #fff;
+                                    background: $primary;
+                                }
+                            }
+                            &:hover {
+                                border: 1px solid #081131;
+                                background: $primary;
+                                .control-input__item__bubble { 
+                                    border: 1px solid #fff;
+                                    background: $primary;
+                                }
+                            }
+                            .control-input__item__bubble {
+                                position: relative;
+                                width: 20px;
+                                height: 20px;
+                                border: 1px solid #F2F2F2;
+                                border-radius: 50%;
+                                margin-right: 24px;
+                                &::after {
+                                    content: "";
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #fff;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    border-radius: 50%;
+                                }
+                            }
+                            .control-input__item__icon {
+                                padding: 8px;
+                                background: #F2F2F2;
+                                border-radius: 6px;
+                                margin-right: 16px;
+                                img {
+                                    width: 24px;
+                                    height: 24px;
+                                }
+                            }
+                            .control-input__item__label {
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+                .control-indicator {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

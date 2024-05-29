@@ -1,0 +1,149 @@
+@import "../../module.variables.scss";
+
+.Alert {
+  position: fixed;
+  top: 0%;
+  right: 0;
+  // left: 50%;
+  // transform: translateX(-50%);
+  max-width: 35%;
+  max-height: 100%;
+  overflow: auto;
+  padding: 24px;
+  z-index: 9999;
+  font-size: 15px;
+  opacity: 1;
+
+  .Alert__Item {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30px;
+    max-height: 50px;
+    border-radius: 100px;
+    background: $white;
+    box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.1);
+    margin-bottom: 25px;
+    position: relative;
+    padding: 10px 0 10px 30px;
+    @media only screen and (max-width: $MobileWidthScreen) {
+      max-height: 70px;
+    }
+
+    // .icon {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: center;
+    //   width: 80px;
+
+    //   svg {
+    //     height: 35px;
+    //   }
+    // }
+
+    .content {
+      flex: 1;
+      width: 100%;
+      // padding-right: 15px;
+
+      .title {
+        font-weight: 500;
+        margin-bottom: 5px;
+        color: $dark;
+        font-size: 1.2em;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      .message {
+        color: $white;
+        word-break: break-word;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.2em;
+      }
+    }
+
+    .btnRemove {
+      min-height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-right: 10px;
+      border-radius: 50%;
+      transition: 0.3s ease;
+      svg {
+        height: 12px;
+        * {
+          fill: rgba($color: $white, $alpha: 1);
+        }
+      }
+
+      &:hover {
+        fill: rgba($color: $white, $alpha: 0.8);
+      }
+    }
+  }
+
+  .Alert__Item {
+    &.success {
+      background: $success;
+
+      // .icon svg * {
+      //   fill: $success;
+      // }
+    }
+
+    &.danger {
+      background: $danger;
+
+      // .icon svg * {
+      //   fill: $danger;
+      // }
+    }
+
+    &.info {
+      background: $info;
+
+      // .icon svg * {
+      //   fill: $info;
+      // }
+    }
+
+    &.warning {
+      background: $warning;
+
+      // .icon svg * {
+      //   fill: $warning;
+      // }
+    }
+  }
+
+  .Alert__Item-enter {
+    opacity: 0;
+  }
+  .Alert__Item-enter-active {
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+  }
+  .Alert__Item-exit {
+    opacity: 1;
+  }
+  .Alert__Item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+  }
+}
+
+.Mobile {
+  .Alert {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

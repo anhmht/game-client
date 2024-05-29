@@ -1,0 +1,71 @@
+@import "../../module.variables.scss";
+
+.AlertWin {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: rgba($color: #000000, $alpha: 0.9);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+  .box {
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    padding: 30px;
+    text-align: center;
+    max-width: 100%;
+    width: 500px;
+
+    .btnClose {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background: $white;
+      cursor: pointer;
+
+      svg {
+        height: 15px;
+
+        * {
+          fill: $dark;
+        }
+      }
+    }
+
+    img.imageHead {
+      width: 120px;
+      object-fit: contain;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-size: 2em;
+      color: $white;
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+
+    .value {
+      color: $success;
+      font-weight: 500;
+      font-size: 3em;
+      margin-bottom: 50px;
+    }
+  }
+}

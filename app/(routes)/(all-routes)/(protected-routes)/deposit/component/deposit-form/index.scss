@@ -1,0 +1,287 @@
+.deposit-form {
+    .deposit-form__step-1 {
+        position: relative;
+        .deposit-form__step-1__title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            .deposit-form__step-1__title__icon {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                color: #fff;
+                margin-right: 12px;
+                z-index: 1;
+            }
+            .deposit-form__step-1__title__label {
+                font-size: 16px;
+                font-family: "Pixel Operator HB";
+                text-transform: uppercase;
+            }
+        }
+        .deposit-form__step-1__content {
+            margin-bottom: 32px;
+            .token-select {
+                .token-select__control {
+                    background: #141414;
+                    border: 1px solid #303030;
+                    height: 48px;
+                    // background: transparent;
+                    // box-shadow: none;
+                    // border: none;
+                    // cursor: pointer;
+                    &.token-select__control--is-focused {
+                        // box-shadow: none;
+                        // border: none;
+                    }
+                    .token-select__value-container {
+                        height: 100%;
+                        padding: 8px 12px;
+                        .token-select__single-value {
+                            height: 100%;
+                            .single-value__container {
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                .single-value__icon {
+                                    margin-right: 8px;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    img {
+                                        height: 22px;
+                                        width: 22px;
+                                        object-position: center center;
+                                    }
+                                }
+                                .single-value__label {
+                                    font-size: 16px;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                    .token-select__indicators {
+                        .token-select__indicator {
+                            padding: 12px;
+                            svg {
+                                width: 14px;
+                                height: 14px;
+                                * {
+                                    fill: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .token-select__menu {
+                    // padding: 8px 16px;
+                    // width: max-content;
+                    // border: none;
+                    // box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+                    // border-radius: 12px;
+                    .token-select__menu-list {
+                        .token-select__option {
+                            // border-radius: 8px;
+                            // padding: 8px;
+                            transition: 0.25s;
+                            cursor: pointer;
+                            &:hover:not(.token-select__option--is-selected) {
+                                // background: #F2F2F2;
+                            }
+                            &:not(:last-child) {
+                                // margin-bottom: 2px;
+                            }
+                            .custom-option__container {
+                                display: flex;
+                                align-items: center;
+                                .custom-option__icon {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-right: 6px;
+                                    img {
+                                        height: 24px;
+                                        width: 24px;
+                                    }
+                                }
+                                .custom-option__description {
+                                    margin-right: 6px;
+                                    color: #081131;
+                                    font-weight: 500;
+                                }
+                                .custom-option__label {
+                                    color: #a5a5a5;
+                                }
+                            }
+                            &.option--is-selected {
+                                cursor: default;
+                                background: #f2f2f2;
+                                .custom-option__container {
+                                    .custom-option__label {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .deposit-form__step-2 {
+        .deposit-form__step-2__title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            .deposit-form__step-2__title__icon {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                background: #000;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                color: #fff;
+                margin-right: 12px;
+                z-index: 1;
+            }
+            .deposit-form__step-2__title__label {
+                font-size: 16px;
+                font-family: "Pixel Operator HB";
+                text-transform: uppercase;
+            }
+        }
+        .deposit-form__step-2__content {
+            .deposit-zone__network-select {
+                margin-bottom: 24px;
+                .network-select {
+                    .network-select__control {
+                        background: #141414;
+                        border: 1px solid #303030;
+                        height: 48px;
+                        .network-select__value-container {
+                            padding: 2px 12px;
+                            .network-select__single-value {
+                                font-size: 16px;
+                                color: #fff;
+                            }
+                        }
+                        .network-select__indicators {
+                            .network-select__indicator {
+                                padding: 12px;
+                                svg {
+                                    width: 14px;
+                                    height: 14px;
+                                    * {
+                                        fill: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .deposit-zone__address-label {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+            }
+            .deposit-zone__address-content {
+                position: relative;
+                margin-bottom: 4px;
+                display: flex;
+                align-items: center;
+                .deposit-zone__address-content__value {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    flex: 1;
+                    font-size: 16px;
+                    padding: 15px 12px;
+                    border: 1px solid #303030;
+                    background: #141414;
+                    border-top-left-radius: 4px;
+                    border-bottom-left-radius: 4px;
+                }
+                .deposit-zone__address-content__icon {
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    padding: 15px 12px;
+                    background: #303030;
+                    border-top-right-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    .deposit-zone__address-content__icon__icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 4px;
+                    }
+                }
+            }
+            .deposit-zone__warning {
+                color: #F3C759;
+                font-size: 16px;
+                font-family: 'Pixel Operator';
+            }
+        }
+    }
+}
+
+.deposit-promotion-popup.PopupWraper {
+    .box {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 80vh;
+        top: initial;
+        transform: initial;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        width: 100%;
+        @media (min-width: 768px) {
+            width: fit-content;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: max-content;
+            border-radius: 12px;
+        }
+        .boxTitle {
+            padding: 12px 16px;
+            @media (min-width: 768px) {
+                padding: 12px 32px;
+            }
+        }
+        .content {
+            padding: 16px;
+            height: calc(100% - 44px);
+            max-height: initial;
+
+            a {
+                color: #000;
+                text-decoration: none;
+                transition: all 0.25s;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            @media (min-width: 768px) {
+                padding: 16px 32px;
+                height: initial;
+                max-height: 85vh;
+            }
+        }
+    }
+}

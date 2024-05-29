@@ -1,0 +1,134 @@
+@import "../../module.variables";
+.twofaPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background: rgba($color: #000, $alpha: 0.5);
+  width: 100%;
+  min-height: 100%;
+  overflow: auto;
+  display: flex;
+  padding: 150px 30px;
+  justify-content: center;
+  max-height: 100%;
+  .box {
+    height: max-content;
+    max-width: 100%;
+    width: 600px;
+    background: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 25px 4px rgba($color: #ffff, $alpha: 0.5);
+    .head {
+      padding: 12px 32px;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 500;
+      color: #fff;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      .btnClose {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.7;
+        cursor: pointer;
+        svg {
+          height: 15px;
+          * {
+            fill: #000;
+          }
+        }
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+    .content {
+      padding: 24px 32px 40px;
+      .walletAddress {
+        .label {
+          margin-bottom: 10px;
+        }
+        .value {
+          display: flex;
+          align-items: center;
+          color: $white;
+          height: 44px;
+          background: rgba($color: $white, $alpha: 0.1);
+          padding: 10px;
+          border-radius: $borderRadius;
+          cursor: pointer;
+          justify-content: space-between;
+          p {
+            flex: 1;
+            width: calc(100% - 30px);
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 10px;
+            svg {
+              height: 15px;
+              * {
+                fill: $white;
+              }
+            }
+          }
+        }
+      }
+      .receiverData {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        .label {
+          display: inline-flex;
+          align-items: center;
+          margin-right: 7px;
+          svg {
+            height: 14px;
+            margin-right: 5px;
+            * {
+              fill: $grey;
+            }
+          }
+        }
+        .name {
+          color: $primary;
+        }
+      }
+    }
+    .underMaintenance {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 20%;
+        object-fit: contain;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.Mobile {
+  .twofaPopup {
+    padding: 15px;
+    .box {
+      .content {
+        padding: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,195 @@
+@import "../../module.variables";
+.DropdownProfile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid $offDark;
+  margin-bottom: 40px;
+  border-radius: $borderRadius;
+  // background: $dark;
+  cursor: pointer;
+  z-index: 200;
+  position: relative;
+  &.fixed {
+    position: fixed;
+    top: 40px;
+    right: 15px;
+  }
+  .label {
+    font-size: 0.9em;
+    color: $text;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 16px;
+    &--name {
+      color: #fff;
+      margin-top: 16px;
+      // margin-left: 16px;
+    }
+    img {
+      width: 35px;
+      border-radius: 50%;
+    }
+  }
+  button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    border-radius: $borderRadius;
+    outline: none;
+    // padding: 0 15px;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    color: $white;
+    position: relative;
+    border: none;
+    .info {
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      font-weight: 300;
+      img.flag {
+        height: 16px;
+      }
+    }
+    .toggleIcon {
+      margin-left: 15px;
+      svg {
+        height: 5px;
+        transform: translateY(-2px);
+        * {
+          fill: $orange;
+        }
+      }
+    }
+    .options {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding-top: 10px;
+      transform: scaleY(0);
+      transform-origin: 50% 0%;
+      transition: 0.2s ease;
+      .wraper {
+        background: $white;
+        width: max-content;
+        border-radius: $borderRadius;
+        // border: 1px solid $borderColor;
+        box-shadow: $boxShadow;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        .item {
+          text-align: left;
+          padding: 10px 15px;
+          .type {
+            margin-bottom: 5px;
+            color: $grey;
+            font-size: 0.8em;
+          }
+          .name {
+            color: $offDark;
+            display: flex;
+            align-items: center;
+            a {
+              color: $offDark;
+              text-decoration: none;
+              display: flex;
+              align-items: center;
+            }
+            svg {
+              height: 25px;
+              margin-right: 15px;
+            }
+          }
+          .amount {
+            font-size: 1.2em;
+            font-weight: 600;
+          }
+          &.language {
+            display: flex;
+            align-items: center;
+            img.flag {
+              height: 16px;
+              margin-right: 10px;
+            }
+          }
+          &:hover {
+            .name {
+              color: $white;
+              a {
+                color: $white;
+              }
+            }
+            background-color: $primary;
+            svg {
+              fill: $white;
+            }
+          }
+          &.active {
+            cursor: default;
+            .type,
+            .amount,
+            .name {
+              color: $primary;
+            }
+            .amount {
+              &::before {
+                content: "• ";
+              }
+            }
+          }
+        }
+        .item:first-child {
+          &:hover {
+            .name {
+              color: $offDark;
+              a {
+                color: $offDark;
+              }
+            }
+            background-color: $white;
+          }
+          cursor: default;
+        }
+      }
+    }
+  }
+  &.show {
+    button {
+      .options {
+        transform: scaleY(1);
+      }
+    }
+  }
+}
+
+.Mobile {
+  .DropdownProfile {
+    top: 2px;
+    img {
+      width: 28px;
+      border-radius: 50%;
+    }
+    button {
+      .options {
+        padding-top: 0px;
+      }
+    }
+  }
+  .DropdownProfile {
+    margin: 0;
+    .label {
+      flex-direction: row;
+      padding-left: 0px;
+      padding-right: 10px;
+      span {
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+}

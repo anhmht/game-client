@@ -1,0 +1,30 @@
+@import './components/';
+
+.change-password-page {
+    padding: 12px 16px;
+    @media (min-width: 576px) {
+        padding: 24px 40px;
+    }
+    .change-password__header {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: rgba(0, 0, 0, 0.8);
+        @media (min-width: 768px) {
+            margin-bottom: 24px;
+        }
+    }
+    .change-password__body {
+        border-radius: 12px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        .ChangePasswordForm {
+            padding: 32px;
+            .main-button {
+                text-align: center;
+                @media (min-width: 768px) {
+                    text-align: initial;
+                }
+            }
+        }
+    }
+}

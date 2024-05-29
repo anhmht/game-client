@@ -1,0 +1,41 @@
+@import "./overview/";
+@import "./commission/";
+@import "./tableTeam/";
+
+.aff {
+  padding: 0 100px 24px 100px;
+
+  @media (max-width: 768px) {
+    padding: 0 12px 12px 12px;
+  }
+
+  h5 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+
+  .btn-tabs {
+    border-radius: 4px;
+    background: #303030;
+    display: flex;
+    padding: 2px;
+
+    &_item {
+      color: rgba(#fff, 0.5);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      padding: 6px 12px;
+      cursor: pointer;
+
+      &.active {
+        border-radius: 4px;
+        background: #fff;
+        color: #900BE4;
+        font-weight: bold;
+      }
+    }
+  }
+}
