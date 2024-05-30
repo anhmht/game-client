@@ -1,0 +1,70 @@
+.custom-carousel {
+  .slider {
+    border: none;
+    &::before {
+      display: none;
+    }
+  }
+  position: relative;
+  padding: 100px 250px;
+  width: 100%;
+  background: rgba(200, 217, 94, 1);
+  box-shadow: 11px -7px 57.9px 0px rgba(0, 0, 0, 0.25) inset;
+  border-radius: 61px;
+  .bubble {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+  }
+  .handler {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    right: 100px;
+    transform: translateY(-50%);
+    
+    img {
+      width: 48px;
+      height: 48px;
+      cursor: pointer;
+      &:hover {
+        scale: 1.5;
+      }
+    }
+  }
+  .indicators {
+    margin-top: 70px;
+    
+    h2 {
+      text-align: center;
+      background: linear-gradient(360deg, #4B5803 7.02%, #A1BE06 100%);
+      background-clip: text;
+      color: transparent;
+      font-family: 'ITC Kabel Std';
+      font-style: normal;
+      font-weight: 800;
+      margin-bottom: 50px;
+      font-size: 57px;
+    }
+
+    ul {
+      text-align: center;
+      li {
+        transition: all .25s ease-in;
+        background: rgba(165, 180, 73, 1);
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 8px;
+        &.active {
+          background: rgba(122, 138, 22, 1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.custom-accordion {
+  .item {
+    border-bottom: 4px solid #4A5410;
+    padding-bottom: 30px
+  }
+  .item + .item {
+    margin-top: 30px;
+  }
+  .title {
+    font-family: 'ITC Kabel Std';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px !important;
+    -webkit-text-stroke: 2px #4A5410;
+    span {
+      margin-right: 50px
+    }
+    .image {
+      background: #4A5410;
+      padding: 14px;
+      height: 52px;
+      display: flex;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+      img {
+        transition: all 0.3s ease-out;
+      }
+      &:hover {
+        scale: 1.1;
+      }
+      &.active {
+        background: linear-gradient(6.26deg, #FF9A05 4.93%, #FFC101 95.07%);
+        border: 2px solid;
+        padding: 10px;
+        img {
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  .content {
+    font-family: 'ITC Kabel Std';
+    font-style: normal;
+    font-weight: 800;
+    -webkit-text-stroke: 1px #4A5410;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &.active {
+      max-height: 200px;
+    }
+  }
+}
